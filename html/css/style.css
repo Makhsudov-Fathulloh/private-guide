@@ -1,0 +1,76 @@
+.topic {
+    color: darkred;
+    font-size: 24px;
+}
+
+.tiger {
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+header {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav {
+    margin-top: 2px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#aside-right {
+    margin-top: 2px;
+    margin-left: 2px;
+    height: 500px;
+    line-height: 500px;
+    width: 20%;
+    float: right;
+}
+
+section {
+    height: 500px;
+    line-height: 500px;
+    margin-top: 2px;
+    width: 59.75%;
+    float: right;
+}
+
+#aside-left {
+    margin-top: 2px;
+    margin-left: 2px;
+    height: 500px;
+    width: 20%;
+    line-height: 500px;
+    float: left;
+}
+
+footer {
+    margin-top: 2px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    width: 100%;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: left;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
