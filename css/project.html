@@ -1,83 +1,239 @@
 <!doctype html>
 <html lang="uz">
+
 <head>
     <meta charset="utf-8">
     <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="/css/css/style.css">
+    <link rel="stylesheet" href="/css/css/project.css">
+    <link rel="icon" href="/css/img/project/favicon.webp" type="favicon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
 <!-- Header section -->
-<header class="main-header">
-    <nav class="main-navigation">
-        <ul class="main-navigation__items">
-            <li class="main-navigation__item">
-                <a href="">Asosiy</a>
-            </li>
-            <li class="main-navigation__item">
-                <a href="">Men haqimda</a>
-            </li>
-            <li class="main-navigation__item">
-                <a href="">Xizmatlar</a>
-            </li>
-            <li class="main-navigation__item">
-                <a href="">Mijozlar</a>
-            </li>
-            <li class="main-navigation__item">
-                <a href="">Portfolio</a>
-            </li>
-            <li class="main-navigation__item">
-                <a href="">Blog</a>
-            </li>
-            <li class="main-navigation__item">
-                <a href="">Sheriklar</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- /Header section -->
+<div class="container">
+    <header class="main-header">
+        <div class="main_header__brand">
+            <a href="/css/index.php"><img src="/css/img/project/logo.webp" alt="logo"></a>
+        </div>
+        <nav class="main-navigation">
+            <ul class="main-navigation__items">
+                <li class="main-navigation__item active">
+                    <a href="">Asosiy</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="">Men haqimda</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="">Xizmatlar</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="">Mijozlar</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="">Portfolio</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="">Blog</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="">Sheriklar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<!-- /Header section -->
 
-    <!-- Main section -->
-    <section id="main-section">
-        <h1>Asosiy qism</h1>
+<!-- Main section -->
+<div class="container">
+    <section id="main-section" class="main-section">
+        <div class="main-section__info">
+            <h4 class="main-section__welcome to-uppercase">Hey There ! (Salom hammaga!)</h4>
+            <h1 class="main-section__introduction to-uppercase">I am Makhsudov</h1>
+            <h3 class="main-section__position to-uppercase">Bedinner develeoper</h3>
+            <div class="main-section__social-networks">
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-gitlab"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <button type="button" class="button main-section__action to-uppercase">
+                See my work
+            </button>
+        </div>
+        <div class="main-section__image">
+            <img src="/css/img/project/image.webp" alt="My photo">
+        </div>
     </section>
-    <!-- /Main section -->
+    <div class="clearfix"></div>
+</div>
+<!-- /Main section -->
 
-    <!-- About me section -->
-    <section id="about-me">
-        <h1>Asosiy qism</h1>
+<!-- Statistics -->
+<div class="container">
+    <section id="statistics" class="statistics">
+        <div class="statistics__item">
+            <h3 class="statistics__number">
+                15k+
+            </h3>
+            <p class="statistics__title">
+                Happy Customer <br> (Hursand mijozlar)
+            </p>
+        </div>
+        <div class="statistics__item">
+            <h3 class="statistics__number">
+                12k+
+            </h3>
+            <p class="statistics__title">
+                Ticket Solved <br> (Yordam)
+            </p>
+        </div>
+        <div class="statistics__item">
+            <h3 class="statistics__number">
+                9/10
+            </h3>
+            <p class="statistics__title">
+                Average Rating <br> (O'rtacha reyting)
+            </p>
+        </div>
     </section>
-    <!-- /About me section -->
+</div>
+<!-- /Statistics -->
 
-    <!-- Services section -->
-    <section id="services">
-        <h1>Xizmatlarim</h1>
+<!-- About me section -->
+<div class="container">
+    <section id="about-me" class="about-me">
+        <div class="about-me__image">
+            <img src="/css/img/project/about-us.webp" alt="About me image">
+        </div>
+        <div class="about-me__info">
+            <h5 class="section-subtitle">
+                About me (Men haqimda)
+                <span class="blur-line"></span>
+            </h5>
+            <h3 class="section-title">
+                Bedinner develeoper
+            </h3>
+            <p class="about-me__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button type="button" class="button about-me__action to-uppercase">
+                View CV
+            </button>
+        </div>
     </section>
-    <!-- /Services section -->
+    <div class="clearfix"></div>
+</div>
+<!-- /About me section -->
 
-    <!-- Clients section -->
-    <section id="clients">
-        <h1>Mijozlarim</h1>
+<!-- Services section -->
+<div class="container">
+    <section id="services" class="services">
+        <h5 class="section-subtitle">
+            Our Service (Hizmatlarimiz)
+            <span class="blur-line"></span>
+        </h5>
+        <h2 class="section-title">
+            We to you <br>
+            services we offer
+        </h2>
+        <div class="services-cards">
+            <div class="service-card">
+                <img class="service-card__icon" src="/css/img/project/service/service-1.webp" alt="Web Development">
+                <h5 class="service-card__title">Web Development</h5>
+                <p class="service-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
+                </p>
+                <a href="#" class="service-card__link">Learn more</a>
+            </div>
+            <div class="service-card">
+                <img class="service-card__icon" src="/css/img/project/service/service-2.webp" alt="Web Development">
+                <h5 class="service-card__title">UX/UI Design</h5>
+                <p class="service-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
+                </p>
+                <a href="#" class="service-card__link">WP Developing</a>
+            </div>
+            <div class="service-card">
+                <img class="service-card__icon" src="/css/img/project/service/service-3.webp" alt="Web Development">
+                <h5 class="service-card__title">Web Development</h5>
+                <p class="service-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
+                </p>
+                <a href="#" class="service-card__link">Learn more</a>
+            </div>
+        </div>
     </section>
-    <!-- /Clients section -->
+</div>
+<!-- /Services section -->
 
-    <!-- Portfolio section -->
-    <section id="portfolio">
-        <h1>Portfolio</h1>
+<!-- Clients section -->
+<div class="container">
+    <section id="clients" class="clients">
+        <h5 class="section-subtitle">
+            Our customers
+            <span class="blur-line"></span>
+        </h5>
+        <h2 class="section-title">
+            Honourable Client Says <br>
+            About Me
+        </h2>
+        <div class="client-items">
+            <div class="client-item">
+                <div class="client-item__image">
+                    <img src="/css/img/project/client-1.webp" alt="Client image">
+                </div>
+                <div class="client-item__info">
+                    <h3 class="client-item__name">
+                        John Dou
+                    </h3>
+                    <p class="client-item__position">
+                        Bedinner develeoper
+                    </p>
+                    <p class="client-item__review ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                    <div class="client-item__rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star disabled"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- /Portfolio section -->
+    <div class="clearfix"></div>
+</div>
+<!-- /Clients section -->
 
-    <!-- Blog section -->
-    <section id="blog">
-        <h1>Blog</h1>
-    </section>
-    <!-- /Blog section -->
+<!-- Portfolio section -->
+<section id="portfolio">
+    <h1>Portfolio</h1>
+</section>
+<!-- /Portfolio section -->
 
-    <!-- Partners section -->
-    <section id="partners">
-        <h1>Sheriklarim</h1>
-    </section>
-    <!-- /Partners section -->
-</header>
+<!-- Blog section -->
+<section id="blog">
+    <h1>Blog</h1>
+</section>
+<!-- /Blog section -->
+
+<!-- Partners section -->
+<section id="partners">
+    <h1>Sheriklarim</h1>
+</section>
+<!-- /Partners section -->
+
 
 <!-- Footer section -->
 <footer class="footer">
