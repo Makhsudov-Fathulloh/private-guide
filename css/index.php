@@ -12,8 +12,9 @@
     <li><b><a href="/css/pages/1.php"> Introduction to CSS </a></b></li>
     <li><b><a href="/css/pages/2.php"> Core properties </a></b></li>
     <li><b><a href="/css/pages/3.php">Positioning</a></b></li>
-    <li><b><a href="/css/pages/4.php">CSS</a></b></li>
+    <li><b><a href="/css/pages/4.php">Images</a></b></li>
     <li><b><a href="/css/pages/5.php">CSS</a></b></li>
+    <li><b><a href="/css/pages/6.php">CSS</a></b></li>
 </ol>
 </body>
 </html>
