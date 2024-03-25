@@ -1,0 +1,143 @@
+.container {
+    padding: 30px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2E856F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006A4E;
+}
+
+
+/* radio-button */
+.form-control {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* brauzer radio-button berkitish */
+.form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* radio-button ga style berish */
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* cursor olib borilganda orqa fonni uzgartirish */
+.form-control:hover input ~ .custom-radio {
+    background-color: #ccc;
+}
+
+/* radio-button tanlanganda orqa fonni uzgartirish */
+.form-control input:checked ~ .custom-radio {
+    background-color: #2D846E;
+}
+
+/* radio-button tanlanganini bildiruvchi belgi yaratish */
+.custom-radio:after {
+    top: 8px;
+    left: 8px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* tanlangan payt belgi korsatish */
+.form-control input:checked ~ .custom-radio:after {
+    display: block;
+}
+
+
+/* checkbox */
+.form-control-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* brauzer checkbox berkitish */
+.form-control-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* checkbox ga style berish */
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+}
+
+/* cursor olib borilganda orqa fonni uzgartirish */
+.form-control-checkbox:hover input ~ .custom-checkbox {
+    background-color: #ccc;
+}
+
+/* checkbox tanlanganda orqa fonni uzgartirish */
+.form-control-checkbox input:checked ~ .custom-checkbox {
+    background-color: #2D846E;
+}
+
+/* checkbox tanlanganini bildiruvchi belgi yaratish */
+.custom-checkbox:after {
+    top: 4px;
+    left: 8px;
+    height: 10px;
+    width: 5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* tanlangan payt belgi korsatish */
+.form-control-checkbox input:checked ~ .custom-checkbox:after {
+    display: block;
+}
+
+
+
