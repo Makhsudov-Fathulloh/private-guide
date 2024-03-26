@@ -74,6 +74,10 @@ error_reporting(E_ALL);
 
     <h1>Style berilgan radio-button</h1>
 
+    <img src="/css/img/forms/radio.png" alt="radio-button"> <br><br>
+    <img src="/css/img/forms/radio-CSS-1.png" alt="radio-button-CSS-2"> <br><br>
+    <img src="/css/img/forms/radio-CSS-2.png" alt="radio-button-CSS-2"> <br><br>
+
     <label class="form-control">Radio-1
         <input type="radio"  name="radio" value="radio-1" checked>
         <span class="custom-radio"></span>
@@ -87,7 +91,7 @@ error_reporting(E_ALL);
     <label class="form-control">Radio-3
         <input type="radio" name="radio" value="radio-3">
         <span class="custom-radio"></span>
-    </label> <br><br><br>
+    </label><br><br><br>
 
     <li><b class="">Checkbox</b> - birneshta variantlarni tanlash imkonini beruvchi form elementi</li>
     <br>
@@ -98,6 +102,10 @@ error_reporting(E_ALL);
     <input type="checkbox" name="student-no" id="student-no"> <br><br><br>
 
     <h1>Style berilgan checkbox</h1>
+
+    <img src="/css/img/forms/checkbox.png" alt="checkbox-button"> <br><br>
+    <img src="/css/img/forms/checkbox-CSS-1.png" alt="checkbox-button-CSS-1"> <br><br>
+    <img src="/css/img/forms/checkbox-CSS-2.png" alt="checkbox-button-CSS-2"> <br><br>
 
     <label class="form-control-checkbox">Checkbox-1
         <input type="checkbox" name="checkbox" value="checkbox-1" checked>
@@ -112,11 +120,7 @@ error_reporting(E_ALL);
     <label class="form-control-checkbox">Checkbox-3
         <input type="checkbox" name="checkbox" value="checkbox-3">
         <span class="custom-checkbox"></span>
-    </label> <br><br><br>
-
-    <li><b class="topic-heading"></b> -</li>
-    <img src="/css/img/" alt=""><br><br>
-
+    </label>
 </div>
 
 </body>

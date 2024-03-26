@@ -14,7 +14,7 @@
     <li><b><a href="/css/pages/3.php">Positioning</a></b></li>
     <li><b><a href="/css/pages/4.php">Images</a></b></li>
     <li><b><a href="/css/pages/5.php">Forms</a></b></li>
-    <br>
+    <li><b><a href="/css/pages/6.php">Units (O'lchov birliklari)</a></b></li>
 </ol>
 <ul>
     <div><b><a href="/css/project.html">Project</a></b></div>
