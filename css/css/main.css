@@ -139,5 +139,77 @@ button:hover {
     display: block;
 }
 
+/* CSS unit px*/
+.pixel {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.pixel h2 {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.pixel h6 {
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.pixel p {
+    font-size: 16px;
+}
+
+/* CSS unit em*/
+.em {
+    font-size: 20px;
+    padding: 0.5em;
+    border: 1px solid red;
+    border-radius: 0.25em;
+}
+
+.em h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.em h6 {
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+
+.em p {
+    font-size: 0.8em;
+}
+
+/* CSS unit rem*/
+html {
+    font-size: 20px;
+}
+
+.rem {
+    padding: 0.5em;
+    border: 1px solid red;
+    border-radius: 0.25em;
+}
+
+.rem h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.rem h6 {
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+
+.rem p {
+    font-size: 0.8em;
+}
+
+.rem span {
+    font-size: 0.5rem;
+}
 
 

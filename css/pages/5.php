@@ -63,7 +63,7 @@ error_reporting(E_ALL);
         </form>
     </li>
 
-    <li><b class="">Radion-button</b> - birneshta variantdan faqat bittasini tanlash form elementi</li>
+    <li><b class="topic">Radion-button</b> - birneshta variantdan faqat bittasini tanlash form elementi</li>
     <br>
 
     <label for="Erkak">Erkak</label>
@@ -72,7 +72,7 @@ error_reporting(E_ALL);
     <input type="radio" name="gender" value="fimale" id="fimale">
     <br><br><br>
 
-    <h1>Style berilgan radio-button</h1>
+    <h1 class="heading">Style berilgan radio-button</h1>
 
     <img src="/css/img/forms/radio.png" alt="radio-button"> <br><br>
     <img src="/css/img/forms/radio-CSS-1.png" alt="radio-button-CSS-2"> <br><br>
@@ -93,7 +93,7 @@ error_reporting(E_ALL);
         <span class="custom-radio"></span>
     </label><br><br><br>
 
-    <li><b class="">Checkbox</b> - birneshta variantlarni tanlash imkonini beruvchi form elementi</li>
+    <li><b class="topic">Checkbox</b> - birneshta variantlarni tanlash imkonini beruvchi form elementi</li>
     <br>
 
     <label for="student">Xa</label>
@@ -101,7 +101,7 @@ error_reporting(E_ALL);
     <label for="student-no">Yo'q</label>
     <input type="checkbox" name="student-no" id="student-no"> <br><br><br>
 
-    <h1>Style berilgan checkbox</h1>
+    <h1 class="heading">Style berilgan checkbox</h1>
 
     <img src="/css/img/forms/checkbox.png" alt="checkbox-button"> <br><br>
     <img src="/css/img/forms/checkbox-CSS-1.png" alt="checkbox-button-CSS-1"> <br><br>
