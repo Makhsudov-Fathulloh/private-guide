@@ -69,7 +69,6 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
     z-index: 10;
-
 }
 
 .main_header__brand {
@@ -105,4 +104,119 @@ body {
 
 .main-navigation__item.active a {
     color: #efb6df;;
+}
+
+/* Footer section styles */
+.footer {
+    padding: 120px 0;
+    margin-top: 50px;
+    background-color: #021017;
+    text-align: center;
+}
+
+.footer__brand img {
+    width: 128px;
+}
+
+.footer__navigation-item {
+    margin: 30px 0;
+}
+
+.footer__navigation-item {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer__navigation-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__social:hover {
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+}
+
+.footer__social:hover i {
+    color: white;
+}
+
+.footer__social {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 36px;
+    color: #05364d;
+    font-size: 1rem;
+    margin-right: 12px;
+}
+
+.footer__socials {
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+.footer__social a {
+    color: #05364d;
+}
+
+.footer__text {
+    color: #797979;
+}
+
+
+       /* Breakpoints styles */
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .footer__navigation-items {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 92%;
+    }
+
+    /*.main-navigation {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.footer__navigation-items {*/
+    /*    display: none;*/
+    /*}*/
+}
+
+
+@media only screen and (max-width: 424px) {
+    .container {
+        width: 90%;
+    }
+
+    /*.main-navigation {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.footer__navigation-items {*/
+    /*    display: none;*/
+    /*}*/
+
+    .footer__socials {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 20px;
+        justify-content: center;
+    }
 }

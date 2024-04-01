@@ -38,3 +38,16 @@ input:focus {
 .contact-send {
     margin-top: 1.87rem; /* 30px / 16px = 1.87rem */
 }
+
+
+       /* Breakpoints styles */
+@media only screen and (max-width: 991px) {
+    .half-row {
+        width: 100%;
+    }
+
+    .contact-firstname,
+    .contact-email {
+        padding: 0;
+    }
+}
