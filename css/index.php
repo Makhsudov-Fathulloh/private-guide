@@ -16,6 +16,7 @@
     <li><b><a href="/css/pages/5.php">Forms</a></b></li>
     <li><b><a href="/css/pages/6.php">Units (O'lchov birliklari)</a></b></li>
     <li><b><a href="/css/pages/7.php">Responsive Web Design (RWD)</a></b></li>
+    <li><b><a href="/css/pages/8.php">Fonts</a></b></li>
 </ol>
 <ul>
     <div><b><a href="/css/project.html">Project</a></b></div>
