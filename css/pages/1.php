@@ -24,7 +24,7 @@ error_reporting(E_ALL);
     <ul>
         <li><b><a href="/index.php">Home</a></b></li>
         <li><b><a href="/css/index.php">CSS</a></b></li>
-        <li><b><a href="/css/project.html">Project</a></b></li>
+        <li><b><a href="/css/project/index.html">Project</a></b></li>
     </ul>
 
     <ul>

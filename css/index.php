@@ -19,8 +19,8 @@
     <li><b><a href="/css/pages/8.php">Fonts</a></b></li>
 </ol>
 <ul>
-    <div><b><a href="/css/project.html">Project</a></b></div>
-    <div><b><a href="/css/project-contact.html">Contact(Project)</a></b></div>
+    <div><b><a href="/css/project/index.html">Project</a></b></div>
+    <div><b><a href="/css/project/contact.html">Contact(Project)</a></b></div><br>
 </ul>
 </body>
 </html>
