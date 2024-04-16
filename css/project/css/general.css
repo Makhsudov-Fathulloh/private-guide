@@ -201,6 +201,15 @@ body {
     margin: 0 auto;
 }
 
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    font-family: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
 .to-uppercase {
     text-transform: uppercase;
 }
