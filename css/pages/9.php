@@ -17,7 +17,7 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="/css/css/style.css">
     <link rel="stylesheet" href="/css/css/main.css">
 
-    <title>Responsive Web Design</title>
+    <title>CSS advanced</title>
 </head>
 
 <body>
