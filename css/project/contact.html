@@ -62,11 +62,13 @@
         </div>
         <form action="/server.php" method="GET">
             <textarea rows="10" name="message" placeholder="Enter Message" ></textarea>
-           <div class="half-row contact-firstname">
-               <input type="text" name="firstname" placeholder="Enter Your Name">
-           </div>
-            <div class="half-row contact-email">
-                <input type="email" name="email" placeholder="Enter Email Address">
+            <div class="half-flex">
+                <div class="contact-firstname">
+                    <input type="text" name="firstname" placeholder="Enter Your Name">
+                </div>
+                <div class="contact-email">
+                    <input type="email" name="email" placeholder="Enter Email Address">
+                </div>
             </div>
             <input type="text" name="subject" placeholder="Enter Subject">
             <button class="button contact-send" type="submit">Send Message</button>

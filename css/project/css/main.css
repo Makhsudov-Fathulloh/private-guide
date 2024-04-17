@@ -10,12 +10,9 @@
 }
 
 .main-section {
+    display: flex;
+    justify-content: space-between;
     padding: 7.5rem 1.87rem; /* 120px / 16px = 7.5rem 1) 30px / 16px = 1.87rem */
-}
-
-.main-section > div {
-    width: 50%;
-    float: left;
 }
 
 .main-section__image {
@@ -62,11 +59,11 @@
 
 /* Statistics section */
 .statistics {
+    display: flex;
     padding-top: 6.25rem; /* 100px / 16px = 6.25rem */
 }
 
 .statistics__item {
-    display: inline-block;
     background-color: #F8FAFF;
     width: 150px;
     text-align: center;
@@ -91,12 +88,12 @@
 
 /* About me section */
 .about-me {
+    display: flex;
     padding: 6.25rem 0; /* 100px / 16px = 6.25rem */
 }
 
 .about-me > div {
-    width: 50%;
-    float: left;
+    flex: 1;
 }
 
 .about-me__image img {
@@ -119,9 +116,11 @@
     padding-top: 6.25rem; /* 100px / 16px = 6.25rem */
 }
 
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+}
 .service-card {
-    display: inline-block;
-    width: 30%;
     padding: 3.75rem 1.87rem; /* 1) 60px / 16px = 3.75rem 2) 30px / 16px = 1.87rem */
     box-sizing: border-box;
     background-color: #F8FAFF;
@@ -168,10 +167,12 @@
     padding-top: 6.25rem; /* 100px / 16px = 6.25rem */
 }
 
+.client-item {
+    display: flex;
+}
+
 .client-item > div {
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
+    flex: 1;
 }
 
 .client-item > div > div {
@@ -345,12 +346,12 @@
 }
 
 .blog-items {
+    display: flex;
     margin-top: 3.12rem; /* 50px / 16px = 3.12rem */
+    justify-content: space-between;
 }
 
 .blog-item {
-    display: inline-block;
-    width: 30%;
     margin-right: 3%;
     box-sizing: border-box;
 }
@@ -433,11 +434,12 @@
 
 /* Partners  section style */
 .partners {
+    display: flex;
     padding-top: 6.25rem; /* 100px / 16px = 6.25rem */
+    justify-content: space-between;
 }
 
 .partner {
-    display: inline-block;
     padding: 0 1.87rem; /* 30px / 16px = 1.87rem */
 }
 
