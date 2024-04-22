@@ -93,8 +93,8 @@ error_reporting(E_ALL);
         <span style="display: inline-block"><img src="/bootstrap/img/images/figure.png" alt="figure"></span><br><br><br>
 
         <li><b class="topic"><a href="https://getbootstrap.com/docs/5.3/content/tables/#overview">Tables (jadvallar)</a></b> - bootstrap jadvallar yaratish (zebrali, success, hover).</li><br>
-        <img src="/bootstrap/img/table/table-code.png" alt="table-code"><br><br>
-        <img src="/bootstrap/img/table/table.png" alt="table"><br><br><br>
+        <img src="/bootstrap/img/content/table-code.png" alt="table-code"><br><br>
+        <img src="/bootstrap/img/content/table.png" alt="table"><br><br><br>
 
     </ul>
 </div>
