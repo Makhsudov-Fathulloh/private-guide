@@ -16,8 +16,16 @@ error_reporting(E_ALL);
     <title>JavaScript</title>
 </head>
 <body>
+<ol>
+    <li><b><a href="/javascript/pages/1.php">Introduction to Javascript</a></b></li>
+    <li><b><a href="/javascript/pages/2.php">Basics (asoslari)</a></b></li>
+    <li><b><a href="/javascript/pages/3.php">Function</a></b></li>
+    <li><b><a href="/javascript/pages/4.php">Array and Object</a></b></li>
+    <li><b><a href="/javascript/pages/5.php">Control flow (oqim boshqaruvi)</a></b></li>
+    <li><b><a href="/javascript/pages/6.php">DOM</a></b></li>
+</ol>
 <ul>
-    <li><b><a href="/index.php">Home</a></b></li>
+    <div><b><a href="/javascript/project/index.html">Project</a></b></div>
 </ul>
 </body>
 </html>
