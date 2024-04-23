@@ -18,7 +18,7 @@ error_reporting(E_ALL);
 <body>
 <ol>
     <li><b><a href="/javascript/pages/1.php">Introduction to Javascript</a></b></li>
-    <li><b><a href="/javascript/pages/2.php">Basics (asoslari)</a></b></li>
+    <li><b><a href="/javascript/pages/2.php">Basics (asoslar)</a></b></li>
     <li><b><a href="/javascript/pages/3.php">Function</a></b></li>
     <li><b><a href="/javascript/pages/4.php">Array and Object</a></b></li>
     <li><b><a href="/javascript/pages/5.php">Control flow (oqim boshqaruvi)</a></b></li>

@@ -17,7 +17,7 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="/css/css/style.css">
     <link rel="stylesheet" href="/css/css/main.css">
 
-    <title>Introduction to Bootstrap</title>
+    <title>Introduction to Javascript</title>
 </head>
 
 <body>
