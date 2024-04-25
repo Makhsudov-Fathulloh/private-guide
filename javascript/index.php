@@ -10,8 +10,7 @@ error_reporting(E_ALL);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript</title>
 </head>
@@ -23,6 +22,7 @@ error_reporting(E_ALL);
     <li><b><a href="/javascript/pages/4.php">Array and Object</a></b></li>
     <li><b><a href="/javascript/pages/5.php">Control flow (oqim boshqaruvi)</a></b></li>
     <li><b><a href="/javascript/pages/6.php">DOM</a></b></li>
+    <li><b><a href="/javascript/pages/7.php">Events</a></b></li>
 </ol>
 <ul>
     <div><b><a href="/javascript/project/index.html">Project</a></b></div>
