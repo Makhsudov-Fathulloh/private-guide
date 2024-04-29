@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/project/css/general.css">
     <link rel="stylesheet" href="/css/project/css/main.css">
     <link rel="stylesheet" href="/css/project/css/RWD-breakpoint.css">
+    <link rel="stylesheet" href="/css/project/css/fonts.css">
     <link rel="icon" href="/css/project/img/favicon.webp" type="favicon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -17,7 +18,7 @@
 <body>
 
 <!-- Header section -->
-<header class="main-header">
+<header class="main-header" id="main-header">
     <div class="container">
         <div class="main_header__brand">
             <a href="/index.php"><img src="/css/project/img/logo.webp" alt="logo"></a>
@@ -28,23 +29,21 @@
                     <a href="/css/project/index.html">Asosiy</a>
                 </li>
                 <li class="main-navigation__item">
-                    <a href="#main-section">Men haqimda</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#services">Xizmatlar</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#clients">Mijozlar</a>
+                    <a href="#about-me">Men haqimda</a>
                 </li>
                 <li class="main-navigation__item">
                     <a href="#portfolio">Portfolio</a>
                 </li>
+
                 <li class="main-navigation__item">
-                    <a href="#blog">Blog</a>
+                    <a href="#">Sahifalar</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item"><a href="#services">Xizmatlar</a></li>
+                        <li class="dropdown__item"><a href="#clients">Mijozlar</a></li>
+                        <li class="dropdown__item"><a href="#partners">Sheriklar</a></li>
+                    </ul>
                 </li>
-                <li class="main-navigation__item">
-                    <a href="#partners">Sheriklar</a>
-                </li>
+
                 <li class="main-navigation__item">
                     <a href="/css/project/contact.html">Bog'lanish</a>
                 </li>
@@ -57,29 +56,29 @@
 <!-- Main section -->
 <div class="main-banner">
     <div class="container">
-    <section id="main-section" class="main-section">
-        <div class="main-section__info">
-            <h4 class="main-section__welcome to-uppercase">Hey There ! (Salom hammaga!)</h4>
-            <h1 class="main-section__introduction to-uppercase">I am Makhsudov</h1>
-            <h3 class="main-section__position to-uppercase">Beginner developer</h3>
-            <div class="main-section__social-networks">
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-gitlab"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <section id="main-section" class="main-section">
+            <div class="main-section__info">
+                <h4 class="main-section__welcome to-uppercase">Hey There ! (Salom hammaga!)</h4>
+                <h1 class="main-section__introduction to-uppercase">I am Makhsudov</h1>
+                <h3 class="main-section__position to-uppercase">Beginner developer</h3>
+                <div class="main-section__social-networks">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-gitlab"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <button type="button" class="button main-section__action to-uppercase">
+                    See my work
+                </button>
             </div>
-            <button type="button" class="button main-section__action to-uppercase">
-                See my work
-            </button>
-        </div>
-        <div class="main-section__image">
-            <img src="/css/project/img/image.webp" alt="My photo">
-        </div>
-    </section>
-    <div class="clearfix"></div>
-</div>
+            <div class="main-section__image">
+                <img src="/css/project/img/image.webp" alt="My photo">
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </div>
 </div>
 <!-- /Main section -->
 
@@ -198,33 +197,97 @@
             Honourable Client Says <br>
             About Me
         </h2>
-        <div class="client-items">
-            <div class="client-item">
-                <div class="client-item__image">
-                    <img src="/css/project/img/client-1.png" alt="client-image" width="350" style="right: -500px">
-                    <div class="client-bg-image">
-                        <img src="/css/project/img/client-bg.webp" alt="client-bg-image">
+
+        <div class="carousel">
+            <div class="client-items">
+
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="/css/project/img/client-1.png" alt="client-image" width="350" style="right: -500px">
+                        <div class="client-bg-image">
+                            <img src="/css/project/img/client-bg.webp" alt="client-bg-image">
+                        </div>
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            John Dou
+                        </h3>
+                        <p class="client-item__position">
+                            Bedinner develeoper
+                        </p>
+                        <p class="client-item__review ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                        <div class="client-item__rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star disabled"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="client-item__info">
-                    <h3 class="client-item__name">
-                        John Dou
-                    </h3>
-                    <p class="client-item__position">
-                        Bedinner develeoper
-                    </p>
-                    <p class="client-item__review ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua
-                    </p>
-                    <div class="client-item__rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star disabled"></i>
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="/css/project/img/client-1.png" alt="client-image" width="350" style="right: -500px">
+                        <div class="client-bg-image">
+                            <img src="/css/project/img/client-bg.webp" alt="client-bg-image">
+                        </div>
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            Alex Dou
+                        </h3>
+                        <p class="client-item__position">
+                            Bedinner develeoper
+                        </p>
+                        <p class="client-item__review ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                        <div class="client-item__rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star disabled"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="/css/project/img/client-1.png" alt="client-image" width="350" style="right: -500px">
+                        <div class="client-bg-image">
+                            <img src="/css/project/img/client-bg.webp" alt="client-bg-image">
+                        </div>
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            Fox Dou
+                        </h3>
+                        <p class="client-item__position">
+                            Bedinner develeoper
+                        </p>
+                        <p class="client-item__review ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                        <div class="client-item__rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star disabled"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-dots">
+                <span class="carousel-dot" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+                <span class="carousel-dot" data-index="2"></span>
             </div>
         </div>
     </section>
@@ -255,81 +318,103 @@
         <div class="portfolio-items">
 
             <div class="portfolio-item portfolio-item-1">
-                <img src="/css/project/img/portfolio/portfolio-1.webp" alt="Portfolio image 1" class="portfolio-item__image">
+                <a href="#">
+                <img src="/css/project/img/portfolio/portfolio-1.webp" alt="Portfolio image 1"
+                     class="portfolio-item__image" />
                 <div class="portfolio-item__overlay"></div>
                 <div class="portfolio-item__info">
-                <h4>
-                    <a href="#">Portfolio item 1</a>
-                </h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </p>
+                    <h4>
+                        <span>Portfolio item 1</span>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </p>
                 </div>
+                </a>
             </div>
 
             <div class="portfolio-item portfolio-item-2">
-                <img src="/css/project/img/portfolio/portfolio-2.webp" alt="Portfolio image 2" class="portfolio-item__image">
+                <a href="#">
+                <img src="/css/project/img/portfolio/portfolio-2.webp" alt="Portfolio image 2"
+                     class="portfolio-item__image" />
                 <div class="portfolio-item__overlay"></div>
                 <div class="portfolio-item__info">
                     <h4>
-                        <a href="#">Portfolio item 2</a>
+                        <span>Portfolio item 2</span>
                     </h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
                     </p>
                 </div>
+                </a>
             </div>
 
             <div class="portfolio-item portfolio-item-3">
-                <img src="/css/project/img/portfolio/portfolio-3.webp" alt="Portfolio image 3" class="portfolio-item__image">
+                <a href="#">
+                <img src="/css/project/img/portfolio/portfolio-3.webp" alt="Portfolio image 3"
+                     class="portfolio-item__image" />
                 <div class="portfolio-item__overlay"></div>
                 <div class="portfolio-item__info portfolio-font">
                     <h4>
-                        <a href="#">Portfolio item 3</a>
+                        <span>Portfolio item 3</span>
                     </h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                 </div>
+                </a>
             </div>
 
             <div class="portfolio-item portfolio-item-4">
-                <img src="/css/project/img/portfolio/portfolio-4.webp" alt="Portfolio image 4" class="portfolio-item__image">
+                <a href="#">
+                <img src="/css/project/img/portfolio/portfolio-4.webp" alt="Portfolio image 4"
+                     class="portfolio-item__image" />
                 <div class="portfolio-item__overlay"></div>
                 <div class="portfolio-item__info portfolio-font">
                     <h4>
-                        <a href="#">Portfolio item 4</a>
+                        <span>Portfolio item 4</span>
                     </h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                 </div>
+                </a>
             </div>
 
             <div class="portfolio-item portfolio-item-5">
-                <img src="/css/project/img/portfolio/portfolio-5.webp" alt="Portfolio image 5" class="portfolio-item__image">
-                <div class="portfolio-item__overlay"></div>
-                <div class="portfolio-item__info">
-                    <h4>
-                        <a href="#">Portfolio item 5</a>
-                    </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </p>
-                </div>
+                <a href="#">
+                    <img src="/css/project/img/portfolio/portfolio-5.webp" alt="Portfolio image 5"
+                         class="portfolio-item__image" />
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <span>Portfolio item 5</span>
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                    </div>
+                </a>
             </div>
 
             <div class="portfolio-item portfolio-item-6">
-                <img src="/css/project/img/portfolio/portfolio-6.webp" alt="Portfolio image 6" class="portfolio-item__image">
+                <a href="#">
+                <img src="/css/project/img/portfolio/portfolio-6.webp" alt="Portfolio image 6"
+                     class="portfolio-item__image" />
                 <div class="portfolio-item__overlay"></div>
                 <div class="portfolio-item__info">
                     <h4>
-                        <a href="#">Portfolio item 6</a>
+                        <span>Portfolio item 6</span>
                     </h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
                     </p>
                 </div>
+                </a>
             </div>
 
         </div>
@@ -368,7 +453,8 @@
                         Shall every fourth lesser have...
                     </h5>
                     <p class="blog-item__description">
-                        Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+                        Have whose a two night earth she set you creeping replenish place whales move Forth first him
+                        seed green.
                     </p>
                     <a href="#" class="blog-item__learn-more">Learn More</a>
                 </div>
@@ -393,7 +479,8 @@
                         Shall every fourth lesser have...
                     </h5>
                     <p class="blog-item__description">
-                        Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+                        Have whose a two night earth she set you creeping replenish place whales move Forth first him
+                        seed green.
                     </p>
                     <a href="#" class="blog-item__learn-more">Learn More</a>
                 </div>
@@ -418,7 +505,8 @@
                         Shall every fourth lesser have...
                     </h5>
                     <p class="blog-item__description">
-                        Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+                        Have whose a two night earth she set you creeping replenish place whales move Forth first him
+                        seed green.
                     </p>
                     <a href="#" class="blog-item__learn-more">Learn More</a>
                 </div>
@@ -508,5 +596,6 @@
 </footer>
 <!-- Footer section -->
 
+<script src="js/main.js"></script>
 </body>
 </html>

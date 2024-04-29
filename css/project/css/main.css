@@ -226,6 +226,42 @@
     color: #AEB9BE;
 }
 
+/* Carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.client-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.client-item {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.carousel-dots {
+    position: relative;
+    left: 100%;
+    padding-top: 3rem;
+    transform: translateX(-50%);
+}
+
+.carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: #333;
+}
+
 /* Portfolio section styles */
 .portfolio {
     padding-top: 6.25rem; /* 100px / 16px = 6.25rem */
@@ -323,7 +359,7 @@
     transition: all 0.4s ease 0s;
 }
 
-.portfolio-item__info a {
+.portfolio-item__info span {
     color: white;
     text-decoration: none;
 }
