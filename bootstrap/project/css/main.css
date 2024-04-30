@@ -1,0 +1,163 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Text colors */
+.text-dark-custom {
+    color: #3a3a47 !important;
+}
+.text-grey-custom {
+    color: #5c5c5c !important;
+}
+.text-light-grey-custom {
+    color: #818198 !important;
+}
+.text-dark-blue-custom {
+    color: #383b61 !important;
+}
+.text-blue-custom {
+    color: #3498db !important;
+}
+.text-green-custom {
+    color: #21bf73 !important;
+}
+
+/* Background colors */
+.bg-primary-custom {
+    background-color: #f0f5f9 !important;
+}
+
+/* buttons */
+.btn {
+    padding: 0 50px;
+    line-height: 38px;
+}
+.btn-blue-custom {
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+.btn-blue-custom:hover {
+    border: 2px solid #3498db;
+    background-color: #3498db;
+    color: #ffffff;
+}
+.btn-success-custom {
+    border: 2px solid #21bf73;
+    background-color: #21bf73;
+    color: #ffffff;
+}
+.btn-success-custom:hover {
+    border: 2px solid #21bf73;
+    color: #21bf73;
+}
+/* font styles */
+h1, h2, h3, h4, h5, h6,
+p {
+    font-family: Montserrat;
+}
+
+.h-color {
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* form control custom */
+.form-control-custom {
+    height: 45px;
+    padding-left: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    background-color: #f0f5f8;
+    color: #222222;
+    outline: none;
+}
+
+/* Navbar section */
+.navbar-brand {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link .active,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+
+/* Home section */
+.home {
+    /*background-color: #f0f5f9;*/
+    padding: 150px 0 100px 0;
+}
+
+
+/* About section */
+.about__card-1 {
+    background-color: #fff2e5;
+}
+.about__card-2 {
+    background-color: #f8f9fa;
+}
+.about__card-3 {
+    background-color: #f0f5f9;
+}
+.about__card-image {
+    width: 80px;
+}
+
+
+/* Features section */
+.features__container {
+    background-color: #f0f5f9;
+}
+.mb-5 {
+    margin-bottom: 6rem !important;
+}
+
+
+/* Results section */
+.results__card-image {
+    width: 80px;
+}
+
+
+/* Results section */
+.reviews__container {
+    padding: 100px 50px;
+    background-color: #f0f5f9;
+}
+
+
+/* Pricing section */
+.pricing__card {
+    background-color: #f0f5f9;
+}
+.refund-txt {
+    font-size: 12px;
+    font-weight: 500;
+    color: #505050;
+}
+
+
+/* FAQ */
+.faq__container {
+    padding: 100px 50px;
+    background-color: #f0f5f9;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion-item:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
