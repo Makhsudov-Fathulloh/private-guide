@@ -136,7 +136,7 @@ section {
 }
 
 .option #color-picker {
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
 }
 
