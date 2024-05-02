@@ -4,7 +4,9 @@ toolBtns = document.querySelectorAll('.tool'),
 fillColor = document.querySelector('#fill-color'),
 sizeSlider = document.querySelector('#size-slider'),
 colorBtns = document.querySelectorAll('.colors .option'),
-colorPicker = document.querySelector('#color-picker')
+colorPicker = document.querySelector('#color-picker'),
+clearCanvasBtn = document.querySelector('.clear-canvas'),
+saveImageBtn = document.querySelector('.save-img')
 
 
 // VARIABLE WITH DEFAULT VALUE
@@ -17,11 +19,18 @@ let ctx = canvas.getContext('2d'),
     prevMouseY,
     snapshot
 
+// SET CANVAS BACKGROUND
+const setCannvasBackground = () => {
+    ctx.fillStyle = '#fff'
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    ctx.fillStyle = selectedColor
+}
 
 // SET CANVAS WIDTH AND HEIGHT
 window.addEventListener('load', () => {
     canvas.width = canvas.offsetWidth
     canvas.height = canvas.offsetHeight
+    setCannvasBackground()
 })
 
 
@@ -97,6 +106,11 @@ const drawing = e => {
         // case 'line':
         //     drawLine(e)
         //     break
+        case 'eraser':
+            ctx.strokeStyle = '#fff'
+            ctx.lineTo(e.offsetX, e.offsetY)
+            ctx.stroke()
+            break
         default:
             break
     }
@@ -134,6 +148,21 @@ colorBtns.forEach(btn => {
 colorPicker.addEventListener('change', () => {
     colorPicker.parentElement.style.background = colorPicker.value
     colorPicker.parentElement.click()
+})
+
+
+// CLEAR CANVAS BUTTON
+clearCanvasBtn.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    setCannvasBackground()
+})
+
+// SAVE LIKE IMAGE OUR PAINT
+saveImageBtn.addEventListener('click', () => {
+    const link = document.createElement('a')
+    link.download = `paint${Date.now()}.jpg`
+    link.href = canvas.toDataURL()
+    link.click()
 })
 
 
