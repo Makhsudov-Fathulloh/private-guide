@@ -50,6 +50,25 @@ const drawCircle = e => {
 }
 
 
+// DRAW TRIANGLE
+const drawTriangle = e => {
+    ctx.beginPath()
+    ctx.moveTo(prevMouseX, prevMouseY)
+    ctx.lineTo(e.offsetX, e.offsetY)
+    ctx.lineTo(prevMouseX * 2 - e.offsetX, e.offsetY)
+    ctx.closePath()
+    fillColor.checked ? ctx.fill() : ctx.stroke()
+}
+
+// DRAW Line
+// const drawLine = e => {
+//     ctx.beginPath()
+//     ctx.moveTo(prevMouseX, prevMouseY)
+//     ctx.lineTo(e.offsetX, e.offsetY)
+//     ctx.stroke()
+// }
+
+
 // DRAWING
 const drawing = e => {
     if (!isDrawing) return
@@ -66,6 +85,12 @@ const drawing = e => {
         case 'circle':
             drawCircle(e)
             break
+        case 'triangle':
+            drawTriangle(e)
+            break
+        // case 'line':
+        //     drawLine(e)
+        //     break
         default:
             break
     }
