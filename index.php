@@ -9,6 +9,7 @@
 </head>
 <body>
     <ol>
+        <li><b><a href="/internet/index.php">Internet</a></b></li>
         <li><b><a href="/html/index.php">HTML</a></b></li>
         <li><b><a href="/css/index.php">CSS</a></b></li>
         <li><b><a href="/bootstrap/index.php">Bootstrap</a></b></li>

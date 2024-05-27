@@ -75,7 +75,7 @@ const drawTriangle = e => {
     fillColor.checked ? ctx.fill() : ctx.stroke()
 }
 
-// DRAW Line
+// DRAW LINE
 // const drawLine = e => {
 //     ctx.beginPath()
 //     ctx.moveTo(prevMouseX, prevMouseY)

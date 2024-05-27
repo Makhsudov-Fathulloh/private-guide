@@ -64,7 +64,7 @@ error_reporting(E_ALL);
                 </ol>
             </ul>
 
-            <li><b><i>backgrount-size</i></b> - orqa fo'ndagi rasm qanday o'chovga ega bo'lishini belgilab beradi</li>
+            <li><b><i>backgrount-size</i></b> - orqa fo'ndagi rasm qanday ol'chovga ega bo'lishini belgilab beradi</li>
             <ul>
                 <ol>
                     <li><b><i>cover</i></b> - berilgan elementni butunlay qoplaydi</li>

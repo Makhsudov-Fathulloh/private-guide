@@ -46,7 +46,7 @@ error_reporting(E_ALL);
                 <li><b class="topic">Viewport</b> - web-sahifaning foydalanuvchiga ko'rinadigan qismi</li>
                 <img src="/css/img/position/viewport.png" alt="viewport" width="1000"> <br><br>
             </ul>
-            <li><b><i>fixed</i></b> - element <b>viewport</b>ga nisbatan joylashadi. Yani har doim o;zini joyida qoladi va <b>scroll</b> paytida joyini o'zgartirmaydi</li>
+            <li><b><i>fixed</i></b> - element <b>viewport</b>ga nisbatan joylashadi. Yani har doim o'zini joyida qoladi va <b>scroll</b> paytida joyini o'zgartirmaydi</li>
             <img src="/css/img/position/position-fixed.png" alt="position-fixed"> <br><br>
 
             <li><b><i>absolute</i></b> - element o'zining eng yaqin joylashtirilgan (positioned) ajdod (ancestor) elementiga nisbatan joylashadi. Jpylashtirilgan degani,

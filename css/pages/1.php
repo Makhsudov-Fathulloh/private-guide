@@ -76,7 +76,7 @@ error_reporting(E_ALL);
         <li><b class="topic">Comments (/* */)</b> - kommit yozish</li>
         <br>
 
-        <li><b class="topic">Specifisity</b> - o'zoga hoslik</li>
+        <li><b class="topic">Specifisity</b> - o'ziga hoslik</li>
         <ol>
             <li><b><i>Cascading (Kaskadlash)</i></b> - bir HTML elementiga bir necha CSS qoidalar ko'rsatilishi va
                 ulardan
@@ -84,20 +84,15 @@ error_reporting(E_ALL);
             </li>
             <li><b><i>Specifisity (O'ziga xoslik)</i> - qoidalar turli ustuvorlikka (priorited) ega boladi</b></li>
             <h3>Important (@) -> Inline style -> ID (#) -> Class (.) -> Attribute ([]) -> Tag (tag name)</h3>
-            <i>Importent - eng katta ustuvorlik berish!</i> <br><br>
+            <i><b>Importent</b> - eng katta ustuvorlik berish!</i> <br><br>
         </ol>
 
-        <li><b class="topic">Inheritanse (Meros olish)</b> - element o'z syillariga ega bolmasa, ota-onasidan(parent)
-            meros
-            qilib oladi
+        <li><b class="topic">Inheritanse (Meros olish)</b> - element o'z stillariga ega bolmasa, ota-onasidan(parent) meros qilib oladi.
         </li>
-        <li><b><a href="https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited  ">Meros bo'lib
-                    o'tadigan
-                    CSS xossalari ro'yhati</a></b></li>
+        <li><b><a href="https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited  ">Meros bo'lib o'tadigan CSS xossalari ro'yhati</a></b></li>
         <br>
 
-        <li><b class="topic">HTML Tree</b> - HTML shajarasi</li>
-        <br>
+        <li><b class="topic">HTML Tree</b> - HTML shajarasi</li><br>
         <!--        <img src="/css/img/html-tree/family-tree.png" alt="family-tree"> <br><br>-->
         <img src="/css/img/html-tree/html-code.png" alt="html-code"> <br><br>
         <img src="/css/img/html-tree/html-tree.png" alt="html-tree"> <br><br>

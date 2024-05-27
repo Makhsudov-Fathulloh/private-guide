@@ -75,7 +75,7 @@ error_reporting(E_ALL);
             <img src="/css/img/box/margin-padding-4.png" alt="margin-padding-4"> <br><br>
         </ol>
 
-        <b class="topic">!!! 'Padding'ni ham hudda shunday qisqartma ko'rinishida yozish mumkun</b>
+        <b class="topic">!!! Padding'ni ham hudda shunday qisqartma ko'rinishida yozish mumkun.</b>
         <br><br><br>
     </ul>
 </div>
@@ -186,7 +186,7 @@ error_reporting(E_ALL);
             <img src="/css/img/pseudo/pseudo-class-active.png" alt="pseudo-class-active"> <br><br>
 
             <ul>
-                <li><b><i><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo classes</a></i></b></li>
+                <li><b><i><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo classes</a></i></b></li><br>
             </ul>
         </ol>
 
