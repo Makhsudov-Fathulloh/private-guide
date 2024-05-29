@@ -33,17 +33,23 @@ error_reporting(E_ALL);
     <ul>
         <li><b>echo</b> - berilgan malumotlarni ekranga chiqaruvchi function.</li>
         <li><b>print</b> - berilgan malumotlarni ekranga chiqaradi. print function emas.</li>
+
         <li><b>var_dump()</b> - berilgan parametr qiymati haqida malumot beradi.</li>
         <li><b>print_r()</b> - berilgan parametr qiymati haqida qisqaroq malumot beradi.</li>
         <li><b>isset()</b> - berilgan o'zgaruvchi mavjudligini va null emasligini tekshiradi tekshiradi.</li>
         <li><b>empty()</b> - berilgan o'zgaruvchi bo'shligini tekshiradi.</li>
+        <img src="/php/img/functions-1.png" alt=""> <br><br><br>
 
         <li><b>is_string()</b> - berilgan parametr qiymati <b>string</b>ga tekshiradi.</li>
         <li><b>is_integer()</b> - berilgan parametr qiymati <b>integer</b>ga tekshiradi.</li>
         <li><b>is_bool()</b> - berilgan parametr qiymati <b>boolean</b>ga tekshiradi.</li>
         <li><b>is_null()</b> - berilgan parametr qiymati <b>null</b>ga tekshiradi.</li>
         <br>
+        
         <li><b>gettype()</b> - berilgan parametr turini tekshiradi.</li>
+        <li><b>settype()</b> - </li>
+
+        <li><b>declare(strict_types = 1)</b> - php <b>code</b>ni <b>static</b>dan dynamic holatda o'tkazadi. Yani dynamicda malumot typeni majburiy berish kerak boladi.</li>
         <li><b>define()</b> - orqali constanta elon qilinadi, agar class ichida elon qilinsa const orqali elon qilinadi.
         </li><br>
 

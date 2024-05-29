@@ -17,6 +17,7 @@ error_reporting(E_ALL);
 <body>
 <ol>
     <li><b><a href="/php/pages/1.php">Introduction to PhP</a></b></li>
+    <li><b><a href="/php/pages/2.php">Form and Function</a></b></li>
 
     <h4><b><a href="/php/pages/functions.php">PhP functions</a></b></h4>
 
