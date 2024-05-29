@@ -17,7 +17,7 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="/css/css/style.css">
     <link rel="stylesheet" href="/php/css/main.css">
 
-    <title>Form</title>
+    <title>Form and Function, Variable types</title>
 </head>
 
 <body>
@@ -85,28 +85,12 @@ error_reporting(E_ALL);
             Argumentga boshlangich qiymat berilganda iloji bolsa argumentga berilgan o'zgaruvchini oxirida yozgan yaxshi.</h3>
 
         <li><b class="topic">Recursive function</b> - function ichida yana o'sha functionni chaqirish.</li>
-        <img src="/php/img/2/functions-2.png" alt=""> <br><br><br>
+        <img src="/php/img/2/functions.png" alt=""> <br><br><br>
 
         <h2 class="topic">Vareables types.</h2>
         <img src="/php/img/2/local.png" alt=""> <br><br><br>
         <img src="/php/img/2/global.png" alt=""> <br><br><br>
         <img src="/php/img/2/static.png" alt=""> <br><br><br><br>
-
-        <img src="/php/img/2/while-1.png" alt=""> <br><br><br>
-        <img src="/php/img/2/while-2.png" alt=""> <br><br><br>
-        <img src="/php/img/2/while-3.png" alt=""> <br><br><br>
-        <img src="/php/img/2/while-4.png" alt=""> <br><br><br><br>
-
-        <img src="/php/img/2/do-while-1.png" alt=""> <br><br><br>
-        <img src="/php/img/2/do-while-2.png" alt=""> <br><br><br>
-        <img src="/php/img/2/do-while-3.png" alt=""> <br><br><br>
-        <img src="/php/img/2/do-while-4.png" alt=""> <br><br><br><br>
-
-        <img src="/php/img/2/1.png" alt=""> <br><br><br><br>
-
-        <img src="/php/img/2/foor-1.png" alt=""> <br><br><br>
-        <img src="/php/img/2/foor-2.png" alt=""> <br><br><br>
-        <img src="/php/img/2/foor-3.png" alt=""> <br><br><br>
         
         <img src="/php/img/" alt=""> <br><br><br>
     </ul>

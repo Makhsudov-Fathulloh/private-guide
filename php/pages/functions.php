@@ -38,7 +38,7 @@ error_reporting(E_ALL);
         <li><b>print_r()</b> - berilgan parametr qiymati haqida qisqaroq malumot beradi.</li>
         <li><b>isset()</b> - berilgan o'zgaruvchi mavjudligini va null emasligini tekshiradi tekshiradi.</li>
         <li><b>empty()</b> - berilgan o'zgaruvchi bo'shligini tekshiradi.</li>
-        <img src="/php/img/functions-1.png" alt=""> <br><br><br>
+        <img src="/php/img/functions.png" alt=""> <br><br><br>
 
         <li><b>is_string()</b> - berilgan parametr qiymati <b>string</b>ga tekshiradi.</li>
         <li><b>is_integer()</b> - berilgan parametr qiymati <b>integer</b>ga tekshiradi.</li>
