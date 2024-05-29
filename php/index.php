@@ -10,27 +10,18 @@ error_reporting(E_ALL);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PhP</title>
 </head>
 <body>
-    <ul>
-        <li><b><a href="/index.php">Home</a></b></li>
-        <br>
+<ol>
+    <li><b><a href="/php/pages/1.php">Introduction to PhP</a></b></li>
 
-        <form action="action.php" method="get">
-            <label for="name">Ваше имя:</label>
-            <input name="name" id="name" type="text">
-            <br>
+    <h4><b><a href="/php/pages/functions.php">PhP functions</a></b></h4>
 
-            <label for="age">Ваш возраст:</label>
-            <input name="age" id="age" type="number">
-            <br>
+    <b><a href="/php/project/index.php">Project</a></b>
+</ol>
 
-            <button type="submit">Submit</button>
-        </form>
-    </ul>
 </body>
 </html>
