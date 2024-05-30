@@ -16,14 +16,11 @@ error_reporting(E_ALL);
     <title>SQL</title>
 </head>
 <body>
-    <ol>
-        <li><b><a href="/sql/pages/1.php">Introduction to SQL</a></b></li>
-        <br>
 
-        <h3><a href="/sql/pages/SQL_Commands.php">SQL Commands</a></h3>
 
-        <b><a href="/sql/project/index.php">Project</a></b>
-    </ol>
+<script>
+
+</script>
 </body>
 </html>
 

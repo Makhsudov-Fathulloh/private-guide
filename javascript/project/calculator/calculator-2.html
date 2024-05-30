@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+    <style>
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 92%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('+')">+</button>
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('-')">-</button>
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('*')">*</button>
+        <button onclick="append('0')">0</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="append('/')">/</button>
+    </div>
+</div>
+
+<script>
+    let result = document.getElementById('result');
+
+    function append(value) {
+        result.value += value;
+    }
+
+    function clearInput() {
+        result.value = '';
+    }
+
+    function calculate() {
+        try {
+            result.value = eval(result.value);
+        } catch(error) {
+            result.value = 'Error';
+        }
+    }
+
+    // function calculate() {
+    //     var input1 = parseFloat(document.getElementById('input1').value);
+    //     var input2 = parseFloat(document.getElementById('input2').value);
+    //
+    //     var result = input1 + input2;
+    //
+    //     document.getElementById('result').value = isNaN(result) ? "Invalid input" : result;
+    // }
+
+</script>
+
+</body>
+</html>

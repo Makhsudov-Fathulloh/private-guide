@@ -16,6 +16,7 @@
         <li><b><a href="/javascript/index.php">JavaScript</a></b></li>
         <li><b><a href="/php/index.php">PhP</a></b></li>
         <li><b><a href="/sql/index.php">SQL</a></b></li>
+        <li><b><a href="/nginx/index.php">Nginx</a></b></li>
         <li><b><a href="/ubuntu/index.php">Ubuntu</a></b></li>
     </ol>
 </body>
