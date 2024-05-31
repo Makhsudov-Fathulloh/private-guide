@@ -77,12 +77,112 @@ error_reporting(E_ALL);
         <img src="/sql/img/1/data_types-6.png" alt=""> <br><br><br>
         <img src="/sql/img/1/data_types-7.png" alt=""> <br><br><br>
 
-        <li><b class="topic">Import SQL file</b> - <b>mysql -u root -p</b> > <b>kerakli database yaratish</b> > <b>exit;</b>,
-            <b>mysql -u root -p databaseName < SQL_fileName.sql</b> </li><br>
+        <li><b class="topic">Import SQL file</b> - <b>mysql -u root -p</b> > <b>kerakli database yaratish</b> >
+            <b>exit;</b>,
+            <b>mysql -u root -p databaseName < SQL_fileName.sql</b></li>
+        <br>
         <img src="/sql/img/1/MAMP-1.png" alt=""> <br><br><br>
         <img src="/sql/img/1/MAMP-2.png" alt=""> <br><br><br>
 
-        <img src="/sql/img/1/" alt=""> <br><br><br>
+        <h3>Home work</h3>
+        <img src="/sql/img/1/1.png" alt=""> <br><br><br>
+        <div style="background-color: #021017"><br>
+            <pre style="color: #ffffff;">
+
+                $servername = "localhost";
+                $username = "root";
+                $password = "a123456A!";
+                $dbname = "php_yii2";
+
+                // MySQLga ulanishni
+                $connect = new mysqli($servername, $username, $password, $dbname);
+                //$connect = mysqli_connect('localhost','root', 'a123456A!','php_yii2');
+
+                // Ulanishni tekshirish
+                if (!$connect) {
+                    echo 'Error connect';
+                }
+
+                // 2 vazifa
+                $user = "CREATE TABLE user (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                username VARCHAR(50) NOT NULL,
+                password VARCHAR(32) NOT NULL,
+                status INT(50) DEFAULT 1,
+                created_date TIMESTAMP
+                )";
+
+                // 3 vazifa
+                $sciences = "CREATE TABLE fanlar (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                science_name VARCHAR(255) NOT NULL,
+                status INT(50) DEFAULT 1,
+                created_date TIMESTAMP
+                )";
+
+                $teachers = "CREATE TABLE ustozlar (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                firstname VARCHAR(50) NOT NULL,
+                lastname VARCHAR(50) NOT NULL,
+                science VARCHAR(50) NOT NULL,
+                year_of_birth INT(50),
+                address INT(50),
+                phone INT(50),
+                status INT(50) DEFAULT 1,
+                created_date TIMESTAMP
+                )";
+
+                $students = "CREATE TABLE talabalar (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                firstname VARCHAR(50) NOT NULL,
+                lastname VARCHAR(50) NOT NULL,
+                faculty VARCHAR(50) NOT NULL,
+                phone INT(50) UNIQUE NOT NULL,
+                status INT(50) DEFAULT 1,
+                created_date TIMESTAMP
+                )";
+
+                // 4 vazifa
+                $phone = "CREATE TABLE telefon (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                firstname VARCHAR(50) NOT NULL,
+                lastname VARCHAR(50) NOT NULL,
+                phone INT(50) UNIQUE NOT NULL,
+                created_date TIMESTAMP
+                )";
+
+                // 5 vazifa
+                $delete = "DROP TABLE talabalar";
+
+                $students = "CREATE TABLE talabalar (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                firstname VARCHAR(50) NOT NULL,
+                lastname VARCHAR(50) NOT NULL,
+                faculty VARCHAR(50) NOT NULL,
+                phone INT(50) UNIQUE NOT NULL,
+                status INT(50) DEFAULT 1,
+                created_date TIMESTAMP
+                )";
+
+                // So'rovni tekshirish
+                if ($connect->query($user) === TRUE &&
+                    $connect->query($sciences) === TRUE &&
+                    $connect->query($teachers) === TRUE &&
+                    $connect->query($students) === TRUE &&
+                    $connect->query($phone) === TRUE &&
+                    $connect->query($delete) === TRUE &&
+                    $connect->query($students) === TRUE) {
+                    echo "Create.table: success";
+                } else {
+                    echo "Create.table: error: " . $connect->error;
+                }
+
+                // Ulanuvchilikni yopish
+                $connect->close();
+            </pre>
+            <br>
+        </div>
+        <br>
     </ul>
 </div>
 

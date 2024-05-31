@@ -18,6 +18,7 @@ error_reporting(E_ALL);
 <body>
     <ol>
         <li><b><a href="/sql/pages/1.php">Introduction to SQL</a></b></li>
+        <li><b><a href="/sql/pages/2.php">SELECT and ORDER BY</a></b></li>
         <br>
 
         <h3><a href="/sql/pages/SQL_Commands.php">SQL Commands</a></h3>
