@@ -28,6 +28,8 @@ error_reporting(E_ALL);
         <li><b><a href="/sql/index.php">SQL</a></b></li>
     </ul>
     <ul>
+        <img src="/sql/img/2/2.png" alt=""> <br><br><br>
+
         <li><b class="heading">SELECT * FROM tablename;</b> - kerakli jadvalni barcha ustunlarini tanlash.</li>
         <br>
         <img src="/sql/img/2/select-1.png" alt=""> <br><br><br>
@@ -120,7 +122,7 @@ error_reporting(E_ALL);
         <img src="/sql/img/2/multiple-columns-2.png" alt=""> <br><br><br>
 
         <h3>Homework</h3>
-        <img src="/sql/img/2/2.png" alt=""> <br><br><br>
+        <img src="/sql/img/2/homework.png" alt=""> <br><br><br>
         <div style="background-color: #021017"><br>
             <pre style="color: #ffffff;">
                 1) SELECT first_name AS Ism, last_name AS Familya FROM employees;

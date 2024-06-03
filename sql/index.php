@@ -17,10 +17,11 @@ error_reporting(E_ALL);
 </head>
 <body>
     <ol>
-        <li><b><a href="/sql/pages/1.php">Introduction to SQL</a></b></li>
+        <li><b><a href="/sql/pages/1-basic.php">Introduction to SQL</a></b></li>
         <li><b><a href="/sql/pages/2.php">SELECT and ORDER BY</a></b></li>
         <li><b><a href="/sql/pages/3.php">INSERT, WHERE, LIMIT and OFFSET</a></b></li>
         <li><b><a href="/sql/pages/4.php">UPDATE, REPLACE and DELETE</a></b></li>
+        <li><b><a href="/sql/pages/5-advanced.php">Distinct, GROUP BY and HAVING</a></b></li>
         <br>
 
         <h3><a href="/sql/pages/SQL_Commands.php">SQL Commands</a></h3>

@@ -47,6 +47,9 @@ error_reporting(E_ALL);
         <li><b class="heading">DROP INDEX kayname ON tablename;</b> - jadvaldagi index keyni o'chirish.</li>
         <br>
 
+        <li><b class="heading">SOURCE; (source;)</b> - SQL bazani import qilish.</li>
+        <br>
+
         <li><b class="heading">TRUNCATE TABLE;</b> - butun jadvallarni o'chiradi.</li>
         <li><b class="heading">TRUNCATE TABLE tablename;</b> - jadvaldagi barcha malumotlarni o'chiradi. PRIMARY_KEY ni
             yangilaydi va 1 dan boshlanadi.
@@ -139,23 +142,24 @@ error_reporting(E_ALL);
         </li>
         <br>
 
-
         <h2 class="topic"><a href="https://www.youtube.com/watch?v=UGfteFq_6Co">Install</a> <a
                     href="https://ubuntu.com/server/docs/install-and-configure-postgresql">PostgreSQL</a> on Ubuntu
             22.04</h2>
         </h2>
         <li><b class="heading">sudo apt install postgresql postgresql-contrib</b></li>
         <li><b class="heading">sudo service mysql start</b></li>
-        <li><b class="heading">sudo mysql_secure_installation</b> - root parol qo'yish.</li>
-        <li><b class="heading">mysql -u root -p</b> - root orqali kirish (-u -> user, -p - password).</li>
+
+        <li><b class="heading">CREATE USER username WITH PASSWORD 'password';</b> - username yaratish va parol qo'yish.</li>
+        <li><b class="heading">ALTER USER username CREATEDB;</b> - username boshqa bazalarga kirish va uning boshqa amallarini bajarishga ruxsat bering.</li>
+        <li><b class="heading">CREATE DATABASE dbname OWNER username;</b> - username  yangi baza yaratish ruxsatini bering.</li>
+
+        <li><b class="heading">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password';</b> - root (user) parol yangilash.
+        </li>
         <br>
 
-        <li><b class="heading">CREATE USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY
-                'new_password';</b> - root (user) parol qo'yish.
-        </li>
-        <li><b class="heading">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY
-                'new_password';</b> - root (user) parol yangilash.
-        </li>
+        <li><b class="heading">sudo -i -u postgres</b> - .</li>
+        <li><b class="heading">psql</b> - .</li>
+        <li><b class="heading">psql -U username -d dbname</b> - .</li>
         <br>
 
         <li><b class="heading">sudo service mysql status</b></li>

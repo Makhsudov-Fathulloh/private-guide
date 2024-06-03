@@ -17,7 +17,7 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="/css/css/style.css">
     <link rel="stylesheet" href="/php/css/main.css">
 
-    <title>INSERT, WHERE, LIMIT and OFFSET</title>
+    <title>UPDATE, REPLACE and DELETE</title>
 </head>
 
 <body>
@@ -28,6 +28,8 @@ error_reporting(E_ALL);
         <li><b><a href="/sql/index.php">SQL</a></b></li>
     </ul>
     <ul>
+        <img src="/sql/img/4/4.png" alt=""> <br><br><br>
+
         <li><b class="topic">Update</b> - malumotlarni yangilash.</li>
         <br>
         <img src="/sql/img/4/update-1.png" alt=""> <br><br><br>
@@ -85,7 +87,7 @@ error_reporting(E_ALL);
             <img src="/sql/img/4/delete-column-1.png" alt=""> <br><br><br>
         </li>
 
-        <li><b class="topic">DELETE</b> - .<br>
+        <li><b class="topic">DELETE</b> - .<br><br>
             <img src="/sql/img/4/delete-1.png" alt=""> <br><br><br>
             <img src="/sql/img/4/delete-2.png" alt=""> <br><br><br>
             <img src="/sql/img/4/delete-3.png" alt=""> <br><br><br>

@@ -28,6 +28,8 @@ error_reporting(E_ALL);
         <li><b><a href="/sql/index.php">SQL</a></b></li>
     </ul>
     <ul>
+        <img src="/sql/img/3/3.png" alt=""> <br><br><br>
+
         <li><b class="topic">CRUD - Create Read Update Delete</b></li>
         <img src="/sql/img/3/CRUD.png" alt=""> <br><br><br>
         <li><b class="topic">Create table category and department.</b></li>
