@@ -84,7 +84,7 @@ error_reporting(E_ALL);
         <img src="/sql/img/1/MAMP-1.png" alt=""> <br><br><br>
         <img src="/sql/img/1/MAMP-2.png" alt=""> <br><br><br>
 
-        <h3>Home work</h3>
+        <h3>Homework</h3>
         <img src="/sql/img/1/1.png" alt=""> <br><br><br>
         <div style="background-color: #021017"><br>
             <pre style="color: #ffffff;">

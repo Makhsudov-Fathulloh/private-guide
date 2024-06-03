@@ -119,7 +119,7 @@ error_reporting(E_ALL);
         <br>
         <img src="/sql/img/2/multiple-columns-2.png" alt=""> <br><br><br>
 
-        <h3>Home work</h3>
+        <h3>Homework</h3>
         <img src="/sql/img/2/2.png" alt=""> <br><br><br>
         <div style="background-color: #021017"><br>
             <pre style="color: #ffffff;">
