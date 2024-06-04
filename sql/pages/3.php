@@ -163,6 +163,7 @@ error_reporting(E_ALL);
             </pre>
             <br>
         </div>
+        <br><br>
 
         <img src="/sql/img/3/homework-3.png" alt=""> <br><br><br>
         <div style="background-color: #021017"><br>
