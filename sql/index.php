@@ -23,6 +23,8 @@ error_reporting(E_ALL);
         <li><b><a href="/sql/pages/4.php">UPDATE, REPLACE and DELETE</a></b></li>
         <li><b><a href="/sql/pages/5-advanced.php">Distinct, GROUP BY and HAVING</a></b></li>
         <li><b><a href="/sql/pages/6.php">DATE functions</a></b></li>
+        <li><b><a href="/sql/pages/7.php">Normalization</a></b></li>
+        <li><b><a href="/sql/pages/8.php">INNER JOIN, LEFT JOIN, RIGHT JOIN, Matter</a></b></li>
         <br>
 
         <h3><a href="/sql/pages/SQL_Commands.php">SQL Commands</a></h3>

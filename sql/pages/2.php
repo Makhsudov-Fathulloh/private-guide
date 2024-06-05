@@ -18,6 +18,12 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="/php/css/main.css">
 
     <title>SELECT and ORDER BY</title>
+
+    <style>
+        img {
+            width: 1000px;
+        }
+    </style>
 </head>
 
 <body>

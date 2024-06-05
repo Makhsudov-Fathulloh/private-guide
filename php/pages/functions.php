@@ -37,7 +37,7 @@ error_reporting(E_ALL);
         <li><b>var_dump()</b> - berilgan parametr qiymati haqida malumot beradi.</li>
         <li><b>print_r()</b> - berilgan parametr qiymati haqida qisqaroq malumot beradi.</li>
         <li><b>isset()</b> - berilgan o'zgaruvchi mavjudligini va null emasligini tekshiradi tekshiradi.</li>
-        <li><b>empty()</b> - berilgan o'zgaruvchi bo'shligini tekshiradi.</li>
+        <li><b>empty()</b> - berilgan o'zgaruvchi bo'shligini tekshiradi.</li><br>
         <img src="/php/img/functions.png" alt=""> <br><br><br>
 
         <li><b>is_string()</b> - berilgan parametr qiymati <b>string</b>ga tekshiradi.</li>
@@ -51,10 +51,10 @@ error_reporting(E_ALL);
 
         <li><b>declare(strict_types = 1)</b> - php <b>code</b>ni <b>static</b>dan dynamic holatda o'tkazadi. Yani dynamicda malumot typeni majburiy berish kerak boladi.</li>
         <li><b>define()</b> - orqali constanta elon qilinadi, agar class ichida elon qilinsa const orqali elon qilinadi.
-        </li><br>
+        </li><br><br>
 
         <li><b class="topic"><a href="https://www.php.net/manual/en/ref.math.php">Math</a> functions:</b></li>
-        <ol>
+        <ol><br>
             <li><b>abc()</b> - xar qanday sonni <b>musbat</b> songa aylantirib beradi.</li>
             <li><b>sqrt()</b> - ildizdan chiqarish.</li>
             <li><b>pow()</b> - ikkita parametr qabul qilib, birinchi paremetrni ikinchi parametr darajasini chiqaradi. Darajalar faqat butun son bolishi kerak.</li>
@@ -68,9 +68,9 @@ error_reporting(E_ALL);
             <li><b>min()</b> - sonlar toplami orasidan eng kichigini oladi.</li>
             <li><b>rand()</b> - tasodifiy butun son xosil qiladi. Ikkita parametr berish mumkun, masalan: a dan b gacha bolgan sonlar ichidagi tasodifiy sonni oladi.</li>
             <li><b>mt_rand()</b> - rand() bilan birxil. Farqi algoritimida, biroz tezroq ishlaydi0.</li>
-        </ol>
+        </ol><br><br>
 
-        <li><b class="topic"><a href="https://www.php.net/manual/en/ref.math.php">String</a> functions:</b></li>
+        <li><b class="topic"><a href="https://www.php.net/manual/en/ref.math.php">String</a> functions:</b></li><br>
         <ol>
             <li><b>strlen()</b> - matndagi baytlar sonini qaytaradi (english).</li>
             <li><b>strtolower()</b> - barcha harflarni kichik harfga o'zgartitirb beradi.</li>
