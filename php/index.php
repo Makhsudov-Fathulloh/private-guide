@@ -20,6 +20,7 @@ error_reporting(E_ALL);
     <li><b><a href="/php/pages/2.php">Form and Function, Variable types</a></b></li>
     <li><b><a href="/php/pages/3.php">Loops in PhP</a></b></li>
     <li><b><a href="/php/pages/4.php">Array in PhP</a></b></li>
+    <li><b><a href="/php/pages/5-advanced.php">Require, Include, MySQLi, PDO(CRUD)</a></b></li>
 
     <h4><b><a href="/php/pages/functions.php">PhP functions</a></b></h4>
 

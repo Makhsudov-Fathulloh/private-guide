@@ -15,15 +15,9 @@ error_reporting(E_ALL);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/php/css/main.css">
 
     <title>SELECT and ORDER BY</title>
 
-    <style>
-        img {
-            width: 1000px;
-        }
-    </style>
 </head>
 
 <body>
@@ -86,7 +80,7 @@ error_reporting(E_ALL);
         <br>
         <img src="/sql/img/2/avg().png" alt=""> <br><br><br>
 
-        <li><b class="topic">SELECT CONCAT(columnname, ' ', columnname) AS full_columnname FROM tablename;</b> -
+        <li><b class="heading">SELECT CONCAT(columnname, ' ', columnname) AS full_columnname FROM tablename;</b> -
             CONCAT() ustun qiymatlarini birlashtirib chiqarish.
         </li>
         <br>
@@ -129,8 +123,8 @@ error_reporting(E_ALL);
 
         <h3>Homework</h3>
         <img src="/sql/img/2/homework.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) SELECT first_name AS Ism, last_name AS Familya FROM employees;
 
                 2) SELECT AVG(salary) AS OrtachaOylik FROM salaries;

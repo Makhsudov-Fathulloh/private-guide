@@ -15,15 +15,9 @@ error_reporting(E_ALL);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/php/css/main.css">
 
     <title>INNER JOIN, LEFT JOIN, RIGHT JOIN, Matter</title>
 
-    <style>
-        img {
-            width: 1000px;
-        }
-    </style>
 </head>
 
 <body>
@@ -69,10 +63,10 @@ error_reporting(E_ALL);
             <img src="/sql/img/8/matter-8.png" alt=""> <br><br><br>
         </li>
 
-            <h3>Homework</h3>
-            <img src="/sql/img/8/homework-1.png" alt=""> <br><br><br>
-            <div style="background-color: #021017"><br>
-                <pre style="color: #ffffff;">
+        <h3>Homework</h3>
+        <img src="/sql/img/8/homework-1.png" alt=""> <br><br><br>
+        <div class="pre"><br>
+            <pre>
                 1) SELECT employees.firstName, employees.lastName, offices.city, offices.phone
                    FROM employees
                    JOIN offices ON employees.officeCode = offices.officeCode;
@@ -103,15 +97,15 @@ error_reporting(E_ALL);
                    GROUP BY orderdetails.orderNumber;
 
             </pre>
-                <br>
-            </div>
             <br>
+        </div>
+        <br>
 
-            <img src="/sql/img/8/homework-2.1.png" alt=""> <br><br><br>
-            <img src="/sql/img/8/homework-2.2.png" alt=""> <br><br><br>
-            <img src="/sql/img/8/homework-2.3.png" alt=""> <br><br><br>
-            <div style="background-color: #021017"><br>
-                <pre style="color: #ffffff;">
+        <img src="/sql/img/8/homework-2.1.png" alt=""> <br><br><br>
+        <img src="/sql/img/8/homework-2.2.png" alt=""> <br><br><br>
+        <img src="/sql/img/8/homework-2.3.png" alt=""> <br><br><br>
+        <div class="pre"><br>
+            <pre>
                 6) SELECT customers.contactFirstName, customers.contactLastName,
                    orders.orderDate, orders.shippedDate,
                    products.productName, products.productCode,
@@ -150,13 +144,13 @@ error_reporting(E_ALL);
                     JOIN employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
                     ORDER BY customers.contactFirstName;
             </pre>
-                <br>
-            </div>
             <br>
+        </div>
+        <br>
 
-            <img src="/sql/img/8/homework-3.png" alt=""> <br><br><br>
-            <div style="background-color: #021017"><br>
-                <pre style="color: #ffffff;">
+        <img src="/sql/img/8/homework-3.png" alt=""> <br><br><br>
+        <div class="pre"><br>
+            <pre>
                 11) SELECT orderdetails.productCode, products.productName,
                     COUNT(orderdetails.quantityOrdered) AS totalOrders
                     FROM orderdetails
@@ -201,9 +195,9 @@ error_reporting(E_ALL);
                     FROM customers
                     WHERE customerNumber NOT IN (SELECT DISTINCT customerNumber FROM orders);
             </pre>
-                <br>
-            </div>
             <br>
+        </div>
+        <br>
     </ul>
 </div>
 

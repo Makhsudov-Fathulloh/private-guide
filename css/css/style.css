@@ -1,3 +1,7 @@
+img {
+    width: 1000px;
+}
+
 .topic {
     color: red;
     font-size: 24px;
@@ -9,4 +13,13 @@
 
 .red {
     color: red;
+}
+
+pre {
+    color: #ffffff;
+}
+
+.pre {
+    background-color: #021017;
+    width: 1400px
 }

@@ -15,15 +15,9 @@ error_reporting(E_ALL);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/php/css/main.css">
 
     <title>Normalization</title>
 
-    <style>
-        img {
-            width: 1000px;
-        }
-    </style>
 </head>
 
 <body>
@@ -86,16 +80,6 @@ error_reporting(E_ALL);
         <img src="/sql/img/7/on-delete-set-null-2.png" alt=""> <br><br><br>
         <img src="/sql/img/7/on-delete-set-null-3.png" alt=""> <br><br><br>
         <img src="/sql/img/7/on-delete-set-null-4.png" alt=""> <br><br><br>
-
-        <h3>Homework</h3>
-        <img src="/sql/img/7/homework-1.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
-                1)
-            </pre>
-            <br>
-        </div>
-        <br>
     </ul>
 </div>
 

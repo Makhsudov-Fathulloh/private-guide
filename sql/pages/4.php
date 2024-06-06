@@ -15,15 +15,9 @@ error_reporting(E_ALL);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/php/css/main.css">
 
     <title>UPDATE, REPLACE and DELETE</title>
 
-    <style>
-        img {
-            width: 1000px;
-        }
-    </style>
 </head>
 
 <body>
@@ -53,8 +47,8 @@ error_reporting(E_ALL);
 
         <h3>Homework</h3>
         <img src="/sql/img/4/homework-1.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) UPDATE employees SET officeCode = 2 WHERE lastName = 'Bondur';
                    UPDATE employees SET firstName = 'Jim', lastName = 'Kerri' WHERE email = 'spatterson@classicmodelcars.com';
                    UPDATE employees SET email = REPLACE(email, '@classicmodelcars.com', '@classiccar.com') WHERE officeCode = 2;

@@ -15,15 +15,9 @@ error_reporting(E_ALL);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/php/css/main.css">
 
     <title>INSERT, WHERE, LIMIT and OFFSET</title>
 
-    <style>
-        img {
-            width: 1000px;
-        }
-    </style>
 </head>
 
 <body>
@@ -137,8 +131,8 @@ error_reporting(E_ALL);
         <h3>Homework</h3>
         <img src="/sql/img/3/homework-1.png" alt=""> <br><br><br>
         <img src="/sql/img/3/homework-2.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 2) SELECT
                         (SELECT COUNT(*) FROM employees WHERE gender = 'M') AS erkak_soni,
                         (SELECT COUNT(*) FROM employees WHERE gender = 'F') AS ayol_soni,
@@ -172,8 +166,8 @@ error_reporting(E_ALL);
         <br><br>
 
         <img src="/sql/img/3/homework-3.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) SELECT * FROM products WHERE productLine = 'Classic Cars' AND quantityInStock < 2000;
                    SELECT SUM(quantityInStock) AS jami_sklad_sum FROM products WHERE productLine = 'Classic Cars';
 

@@ -15,15 +15,9 @@ error_reporting(E_ALL);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/php/css/main.css">
 
     <title>Distinct, GROUP BY and HAVING</title>
 
-    <style>
-        img {
-            width: 1000px;
-        }
-    </style>
 </head>
 
 <body>
@@ -69,8 +63,8 @@ error_reporting(E_ALL);
 
         <h3>Homework</h3>
         <img src="/sql/img/5/homework-1.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) select * from orders;
                    select count(*) from orders group by year(orderDate);
                    select year(orderDate) yil, count(*) from orders group by year(orderDate);
@@ -86,8 +80,8 @@ error_reporting(E_ALL);
 
         <img src="/sql/img/5/homework-2.png" alt=""> <br><br><br>
         <img src="/sql/img/5/homework-3.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) SELECT customerNumber, COUNT(*) AS jami_buyurtmalar FROM orders GROUP BY customerNumber;
 
                 2) SELECT status, COUNT(*) AS jami_buyurtmalar FROM orders GROUP BY status;
@@ -114,8 +108,8 @@ error_reporting(E_ALL);
         <br>
 
         <img src="/sql/img/5/homework-4.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) SELECT country, COUNT(customerNumber) AS mijozlar_soni FROM customers GROUP BY country;
 
                 2) SELECT country, SUM(creditLimit) AS jami_kredit_chegarasi FROM customers GROUP BY country;
@@ -144,8 +138,8 @@ error_reporting(E_ALL);
         <img src="/sql/img/5/homework-6.png" alt=""> <br><br><br>
         <img src="/sql/img/5/homework-7.png" alt=""> <br><br><br>
         <img src="/sql/img/5/homework-8.png" alt=""> <br><br><br>
-        <div style="background-color: #021017"><br>
-            <pre style="color: #ffffff;">
+        <div class="pre"><br>
+            <pre>
                 1) SELECT YEAR(paymentDate) AS yil, SUM(amount) AS jami FROM payments GROUP BY YEAR(paymentDate);
 
                 2) SELECT productLine, COUNT(*) AS soni FROM products GROUP BY productLine ORDER BY soni DESC;
