@@ -21,6 +21,8 @@ error_reporting(E_ALL);
     <li><b><a href="/php/pages/3.php">Loops in PhP</a></b></li>
     <li><b><a href="/php/pages/4.php">Array in PhP</a></b></li>
     <li><b><a href="/php/pages/5-advanced.php">Require, Include, MySQLi, PDO(CRUD)</a></b></li>
+    <li><b><a href="/php/pages/6.php">Cookie, Session, Authentication and Authorization</a></b></li>
+    <li><b><a href="/php/pages/7.php">JSON, DATE, FILE</a></b></li>
 
     <h4><b><a href="/php/pages/functions.php">PhP functions</a></b></h4>
 

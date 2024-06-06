@@ -93,7 +93,7 @@ error_reporting(E_ALL);
             <li><b>str_word_count()</b> - matndagi sozlar sonini aniqlaydi. agar soz orasiga raqam aralashsa, raqam qoshilgan so'zni ikkita xarf deb hisoblaydi.</li>
             <li><b>strstr()</b> - matndan berilgan qiymatni qidiradi, topilgan qiymatdan boshlab oxirigacha matn qismini qaytaradi.
                 birinchi parametrda - matn, Ikkinchi parametrda so'ralyotgan matn, (uchunchi parametrga <b>true</b> berilsa qidirilayotkan qiymatgacha bolgan matnni qaytaradi).</li>
-            <li><b>str()</b> - .</li>
+            <li><b>strtotime()</b> - harqandav vaqtni secund formatiga otkazib beradi.</li>
         </ol>
 
         <img src="/php/img/" alt=""> <br><br><br>

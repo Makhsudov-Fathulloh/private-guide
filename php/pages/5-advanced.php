@@ -133,6 +133,8 @@ error_reporting(E_ALL);
 
         <img src="/php/img/5/26.png" alt=""> <br><br><br>
         <img src="/php/img/5/27.png" alt=""> <br><br><br>
+        <img src="/php/img/5/28.png" alt=""> <br><br><br>
+        <img src="/php/img/5/29.png" alt=""> <br><br><br>
 
     </ul>
 </div>
