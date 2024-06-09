@@ -1,20 +1,8 @@
 <?php
 
-declare(strict_types=0);
-ini_set('display_errors', '1');
-error_reporting(E_ALL);
-
+$title = "HTML";
+include '../root/header.php';
 ?>
-
-<!doctype html> <?php // <!doctype html> bu tag emas statement(bayonot, biror narsani aniq ifodalash). Bu HTML5 versiyasini bildiradi ?>
-<html lang="ru"> <?php // Hujjat struvturasi  ?>
-<head>
-    <title>HTML</title>
-    <link rel="stylesheet" href="/html/css/style.css">
-</head>
-
-<body>
-<h1>HTML</h1>
 
 <div>
     <ul>
@@ -509,5 +497,6 @@ error_reporting(E_ALL);
     </ul>
 </div>
 
-</body>
-</html> <?php ?>
+<?php
+include "../root/footer.php";
+?>

@@ -1,26 +1,8 @@
 <?php
 
-declare(strict_types=0);
-ini_set('display_errors', '1');
-error_reporting(E_ALL);
-
+$title = "Array and Object";
+include '../../root/header.php';
 ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/css/style.css">
-    <link rel="stylesheet" href="/css/css/main.css">
-
-    <title>Array and Object</title>
-</head>
-
-<body>
 
 <div>
     <ul>
@@ -46,8 +28,6 @@ error_reporting(E_ALL);
         <img src="/javascript/img/array/method-matter.png" alt="method-matter"> <br><br><br>
 
 
-
-
         <li><b class="topic"><a href="https://www.w3schools.com/js/js_objects.asp">Object</a></b> - bir nechta malumotlar to'plamini
             o'zida saqlashka imkon beruvchi malumotlar turi (data typr).</li><br>
         <img src="/javascript/img/object/javascript-object.png" alt="javascript-object"> <br><br><br>
@@ -70,6 +50,7 @@ error_reporting(E_ALL);
     </ul>
 </div>
 
-</body>
-</html>
+<?php
+include "../../root/footer.php";
+?>
 

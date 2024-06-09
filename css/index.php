@@ -1,30 +1,28 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>css</title>
-</head>
-<body>
-<ol>
-    <li><b><a href="/css/pages/1.php">Introduction to CSS </a></b></li>
-    <li><b><a href="/css/pages/2.php">Core properties </a></b></li>
-    <li><b><a href="/css/pages/3.php">Positioning</a></b></li>
-    <li><b><a href="/css/pages/4.php">Images</a></b></li>
-    <li><b><a href="/css/pages/5.php">Forms</a></b></li>
-    <li><b><a href="/css/pages/6.php">Units (O'lchov birliklari)</a></b></li>
-    <li><b><a href="/css/pages/7.php">Responsive Web Design (RWD)</a></b></li>
-    <li><b><a href="/css/pages/8.php">Texts Fonts Colors</a></b></li>
-    <li><b><a href="/css/pages/9.php">CSS advanced (transform, transition, animation)</a></b></li>
-    <li><b><a href="/css/pages/10.php">Flexbox</a></b></li>
-    <li><b><a href="/css/pages/11.php">CSS Grid</a></b></li>
-    <li><b><a href="/css/pages/12.php">Best Practices</a></b></li>
-</ol>
-<ul>
-    <div><b><a href="/css/project/index.html">Project</a></b></div>
-    <div><b><a href="/css/project/contact.html">Contact(Project)</a></b></div><br>
-</ul>
-</body>
-</html>
+<?php
+
+$title = "css";
+include '../root/header.php';
+?>
+
+<div class="text-center m-5">
+    <h3><a href="/css/pages/1.php">Introduction to CSS </a></h3>
+    <h3><a href="/css/pages/2.php">Core properties </a></h3>
+    <h3><a href="/css/pages/3.php">Positioning</a></h3>
+    <h3><a href="/css/pages/4.php">Images</a></h3>
+    <h3><a href="/css/pages/5.php">Forms</a></h3>
+    <h3><a href="/css/pages/6.php">Units (O'lchov birliklari)</a></h3>
+    <h3><a href="/css/pages/7.php">Responsive Web Design (RWD)</a></h3>
+    <h3><a href="/css/pages/8.php">Texts, Fonts, Colors</a></h3>
+    <h3><a href="/css/pages/9.php">CSS advanced (transform, transition, animation)</a></h3>
+    <h3><a href="/css/pages/10.php">Flexbox</a></h3>
+    <h3><a href="/css/pages/11.php">CSS Grid</a></h3>
+    <h3><a href="/css/pages/12.php">Best Practices</a></h3>
+    <br>
+    <h3><a href="/css/project/index.html">Project</a></h3>
+    <h3><a href="/css/project/contact.html">Contact(Project)</a></h3>
+</div>
+
+<?php
+include "../root/footer.php";
+?>
+
