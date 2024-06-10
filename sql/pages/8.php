@@ -3,6 +3,7 @@
 $title = "INNER JOIN, LEFT JOIN, RIGHT JOIN, Matter";
 include '../../root/header.php';
 ?>
+
 <div>
     <ul>
         <li><b><a href="/index.php">Home</a></b></li>
