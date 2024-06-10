@@ -1,12 +1,12 @@
 <?php
 
-$servername = "lacalhost";
+$servername = "localhost";
 $username = "root";
 $password = "a123456A!";
 $dbname = "project_news";
 
 try {
-    $connect = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // echo "Database ulandi";
 } catch ( PDOException $e ) {
     echo "Database ulanmadi: " . $e->getMessage();

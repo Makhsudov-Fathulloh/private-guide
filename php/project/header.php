@@ -9,9 +9,9 @@
 </head>
 
 <body>
-<div class="container">
+<div>
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="/php/project/admin">project.news</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -29,7 +29,7 @@ include '../../root/header.php';
         <li><b class="heading">DROP INDEX kayname ON tablename;</b> - jadvaldagi index keyni o'chirish.</li>
         <br>
 
-        <li><b class="heading">SOURCE; (source;)</b> - SQL bazani import qilish.</li>
+        <li><b class="heading">SOURCE (source;)</b> - SQL bazani import qilish.</li>
         <br>
 
         <li><b class="heading">TRUNCATE TABLE;</b> - butun jadvallarni o'chiradi.</li>
