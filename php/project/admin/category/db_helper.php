@@ -1,13 +1,39 @@
 <?php
 
-function getCategoryList() {
+function getCategoryList($page) {
     include '../../dbconnect.php';
-    $sql = "SELECT * FROM category;";
+    $limit = 5;
+//    $page = 1;
+    $offset = ($page - 1) * $limit;
+
+    $sql = "SELECT * FROM category LIMIT :offset, :limit;";
     $state = $conn->prepare($sql);
+    $state->bindValue(':limit', $limit, PDO::PARAM_INT);
+    $state->bindValue(':offset', $offset, PDO::PARAM_INT);
     $state->execute();
     $result = $state->fetchAll(PDO::FETCH_ASSOC);
     return $result;
 }
+
+//function getCategoryList() {
+//    include '../../dbconnect.php';
+//    $limit = 5;
+//    $sql = "SELECT * FROM category LIMIT :limit";
+//    $state = $conn->prepare($sql);
+//    $state->bindValue(':limit', $limit, PDO::PARAM_INT);
+//    $state->execute();
+//    $result = $state->fetchAll(PDO::FETCH_ASSOC);
+//    return $result;
+//}
+
+//function getCategoryList() {
+//    include '../../dbconnect.php';
+//    $sql = "SELECT * FROM category;";
+//    $state = $conn->prepare($sql);
+//    $state->execute();
+//    $result = $state->fetchAll(PDO::FETCH_ASSOC);
+//    return $result;
+//}
 
 function  addCategory($title) {
     include '../../dbconnect.php';
@@ -43,5 +69,14 @@ function deleteCategory($id) {
     $state->execute();
 }
 
+function  getPagination() {
+    include '../../dbconnect.php';
+    $limit = 5;
+    $sql = "SELECT * FROM category;";
+    $state = $conn->prepare($sql);
+    $state->execute();
+    $total_rows = $state->rowCount();
+    return ceil($total_rows / $limit);
+}
 
 
