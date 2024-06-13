@@ -11,20 +11,24 @@ include '../../root/header.php';
     </ul>
     <ul>
         <h2 class="topic">MySQL commands:</h2>
-        <li><b class="heading">CREATE DATABASE IF NOT EXISTS databasename;</b> - databasename nomli database bolmasa,
-            databasename nomli database yarat.
-        </li>
+
+        <li><b class="heading">CREATE DATABASE IF NOT EXISTS databasename;</b> - databasename nomli database bolmasa, databasename nomli database yarat.</li>
         <li><b class="heading">CREATE DATABASE databasename;</b> - databasename nomli database yaratish.</li>
-        <li><b class="heading">USE databasename;</b> - databasename nomli database tanlash.</li>
-        <li><b class="heading">SHOW TABLES;</b> - table list.</li>
-        <li><b class="heading">DROP DATABASE IF EXISTS databasename;</b> - databasename nomli database bolmasa, tablename
-            nomli database ochirish.
-        </li>
+        <li><b class="heading">DROP USER 'username'@'localhost';</b> - user nomli userni ochirish.</li>
+        <li><b class="heading">DROP DATABASE IF EXISTS databasename;</b> - databasename nomli database bolmasa, tablename nomli database ochirish.</li>
         <li><b class="heading">DROP DATABASE databasename;</b> - databasename nomli database ochirish.</li>
         <br>
 
-        <li><b class="heading">SHOW DATABASES;</b> - database list.</li>
+        <li><b class="heading">USE databasename;</b> - databasename nomli database tanlash.</li>
+        <li><b class="heading">USE tablename;</b> - tablename nomli table tanlash.</li>
+        <li><b class="heading">USE variable;</b> - variable tanlash uchunham ishlatiladi.</li>
+        <br>
+
+        <li><b class="heading">SELECT user FROM mysql.user;</b> - barcha userlar listi.</li>
         <li><b class="heading">SHOW SCHEMAS;</b> - database list.</li>
+        <li><b class="heading">SHOW DATABASES;</b> - database list.</li>
+        <li><b class="heading">SHOW TABLES;</b> - table list.</li>
+
         <li><b class="heading">SHOW INDEX FROM tablename;</b> - jadvaldagi barcha index keylar ro'yxatini oladi.</li>
         <li><b class="heading">DROP INDEX kayname ON tablename;</b> - jadvaldagi index keyni o'chirish.</li>
         <br>
@@ -49,11 +53,12 @@ include '../../root/header.php';
         <br>
 
         <li><b class="heading">CREATE USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY
-                'new_password';</b> - root (user) parol qo'yish.
-        </li>
+                'new_password';</b> - root (user) parol qo'yish.</li>
+        <li><b class="heading">CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';</b> - user nomli user yaratish.</li>
         <li><b class="heading">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY
-                'new_password';</b> - root (user) parol yangilash.
-        </li>
+                'new_password';</b> - root (user) parol yangilash.</li>
+        <li><b class="heading">ALTER USER 'username'@'localhost' IDENTIFIED BY 'new_password';</b> - user password yangilash.</li>
+
         <br>
 
         <li><b class="heading">sudo service mysql status</b></li>
@@ -99,30 +104,7 @@ include '../../root/header.php';
             databasename nomli database yaratish.
         </li>
         <li><b class="heading">CREATE DATABASE databasename;</b> - databasename nomli database yaratish.</li>
-        <li><b class="heading">USE databasename;</b> - tablename nomli database tanlash.</li>
-        <li><b class="heading">SHOW TABLES;</b> - table list.</li>
-        <li><b class="heading">DROP DATABASE IF EXISTS databasename;</b> - databasename nomli database bolmasa, databasename
-            nomli database ochirish.
-        </li>
-        <li><b class="heading">DROP DATABASE databasename;</b> - databasename nomli database ochirish.</li>
-        <br>
 
-        <li><b class="heading">CREATE TABLE tablename ( column1 datatype, column2 datatype, ... );</b> - tablename nomli table yarat.</li>
-        <li><b class="heading">ALTER TABLE tablename ADD COLUMN columnname datatype;</b> - tablename nomli jadvalga o'zgartirish kiritish.</li>
-        <li><b class="heading">DROP TABLE tablename;</b> - tablename nomli tablename ochirish.</li>
-        <br>
-
-        <li><b class="heading">SHOW DATABASES;</b> - database list.</li>
-        <li><b class="heading">SHOW SCHEMAS;</b> - database list.</li>
-        <li><b class="heading">SHOW INDEX FROM tablename;</b> - jadvaldagi barcha index keylar ro'yxatini oladi.</li>
-        <li><b class="heading">DROP INDEX kayname ON tablename;</b> - jadvaldagi index keyni o'chirish.</li>
-        <br>
-
-        <li><b class="heading">TRUNCATE TABLE;</b> - butun jadvallarni o'chiradi.</li>
-        <li><b class="heading">TRUNCATE TABLE tablename;</b> - jadvaldagi barcha malumotlarni o'chiradi. PRIMARY_KEY ni
-            yangilaydi va 1 dan boshlanadi.
-        </li>
-        <br>
 
         <h2 class="topic"><a href="https://www.youtube.com/watch?v=UGfteFq_6Co">Install</a> <a
                     href="https://ubuntu.com/server/docs/install-and-configure-postgresql">PostgreSQL</a> on Ubuntu
@@ -132,11 +114,17 @@ include '../../root/header.php';
         <li><b class="heading">sudo service mysql start</b></li>
 
         <li><b class="heading">CREATE USER username WITH PASSWORD 'password';</b> - username yaratish va parol qo'yish.</li>
-        <li><b class="heading">ALTER USER username CREATEDB;</b> - username boshqa bazalarga kirish va uning boshqa amallarini bajarishga ruxsat bering.</li>
-        <li><b class="heading">CREATE DATABASE dbname OWNER username;</b> - username  yangi baza yaratish ruxsatini bering.</li>
+        <li><b class="heading">ALTER USER username WITH PASSWORD 'password';</b> - user password yangilash..</li>
+        <li><b class="heading">ALTER USER username WITH SUPERUSER;</b> - user password yangilash..</li>
+        <li><b class="heading">CREATE DATABASE databasename OWNER username;</b> - yaratilgan database username useriga boglangan holda yaratish.</li>
+        <li><b class="heading">GRANT ALL PRIVILEGES ON DATABASE databasename TO username;</b> - yaratilgan database username useriga berilgan ma'lumotlar bazasiga kirish,
+            o'zgartirish va o'chirish uchun barcha huquqlar beriladi.</li>
+        <br>
 
-        <li><b class="heading">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password';</b> - root (user) parol yangilash.
-        </li>
+        <li><b class="heading">DROP USER username;</b> - barcha userlar listi.</li>
+        <br>
+
+        <li><b class="heading">SELECT rolname FROM pg_roles;</b> - barcha userlar listi.</li>
         <br>
 
         <li><b class="heading">sudo -i -u postgres</b> - .</li>

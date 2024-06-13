@@ -1,21 +1,14 @@
 <?php
-include '../header.php';
-include '../dbconnect.php';
-
-$sql = "SELECT * FROM category";
-$state = $conn->prepare($sql);
-$state->execute();
-$result = $state->fetchAll(PDO::FETCH_ASSOC);
-
-//echo "<pre>";
-//print_r($result);
+include '../../header.php';
+include '../../dbconnect.php';
+include 'db_helper.php';
 ?>
 
     <div class="container">
         <h1>Assalamu alaykum!</h1>
         <p>This is admin category page</p>
 
-        <a href="/php/project/admin/addCategory.php" class="btn btn-success">Add category</a>
+        <a href="create.php" class="btn btn-success">Add category</a>
 
         <table class="table table-striped">
             <thead>
@@ -25,12 +18,16 @@ $result = $state->fetchAll(PDO::FETCH_ASSOC);
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($result as $item) {
+            <?php foreach (getCategoryList() as $item) {
                 echo "<tr>";
                 echo "<td>" . $item['id'] . "</td>";
                 echo "<td>" . $item['title'] . "</td>";
+                echo "<td><a href='update.php?id=".$item['id']."' class='btn btn-primary'>Update</a>
+                          <a href='delete.php?id=".$item['id']."' class='btn btn-danger'>Delete</a></tr>";
+                echo "</tr>";
             } ?>
             </tbody>
         </table>
     </div>
+
 <?php include '../footer.php'; ?>
