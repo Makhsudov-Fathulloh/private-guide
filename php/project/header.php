@@ -26,7 +26,7 @@
                         <a class="nav-link" href="/php/project/admin/category/">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/php/project/admin/news.php">News</a>
+                        <a class="nav-link" href="/php/project/admin/post/">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/php/project/admin/tags.php">Tags</a>
