@@ -6,13 +6,17 @@ if (isset($_POST['create'])) {
     // todo
     $title = $_POST['title'];
     $content = $_POST['content'];
-    $author_id = $_POST['author_id'];
     $category_id = $_POST['category_id'];
-    addPost($title, $content, $author_id, $category_id);
+    if (isset($_POST['post_tags'])) {
+        $tags = $_POST['post_tags'];
+    }
+    $author_id = $_POST['author_id'];
+    addPost($title, $content, $author_id, $category_id, $tags);
     header('Location: /php/project/admin/post/'); exit;
 }
 
 $categoryList = getCategoryList(1, true);
+$tagList = getTagList(1, true);
 $authorList = getUserList();
 ?>
 
@@ -39,10 +43,19 @@ $authorList = getUserList();
                     </select>
                 </div>
                 <div class="mb-3 mt-5">
+                    <label for="post_tags" class="form-label">tags</label>
+                    <select class="form-select" name="post_tags[]" multiple>
+                        <?php foreach ($tagList as $item) {
+                            echo "<option value='" . $item['id'] . "'>" . $item['name'] . "</option>";
+                        }
+                        ?>
+                    </select>
+                </div>
+                <div class="mb-3 mt-5">
                     <label for="author_id" class="form-label">author_id</label>
                     <select class="form-select" name="author_id">
                         <?php foreach ($authorList as $item) {
-                            echo "<option value='" . $item['id'] . "'>" . $item['firsname'] . "</option>";
+                            echo "<option value='" . $item['id'] . "'>" . $item['firsname'] . " " . $item['lastname']."</option>";
                         }
                         ?>
                     </select>

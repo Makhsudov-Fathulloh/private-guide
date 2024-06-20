@@ -119,9 +119,9 @@ function getUserList() {
     return $result;
 }
 
-function  addPost($title, $content, $author_id, $category_id) {
+function  addPost($title, $content, $category_id, $author_id, $tags = null) {
     include '../../dbconnect.php';
-    $sql_insert = "INSERT INTO post (title, content, author_id, category_id, visition_count, created_at) 
+    $sql_insert = "INSERT INTO post (title, content, category_id, author_id, visition_count, created_at) 
     VALUES (:title, :content, :category_id, :author_id, :visition_count, :created_at);";
     $state = $conn->prepare($sql_insert);
     $state->bindValue(":title", $title);
@@ -131,6 +131,18 @@ function  addPost($title, $content, $author_id, $category_id) {
     $state->bindValue(":visition_count", 0);
     $state->bindValue(":created_at", date("Y-m-d H:i:s"));
     $state->execute();
+
+    $post_id = $conn->lastInsertId(); // ohirgi add qilingan element id sini olib beradi
+    $sql_post_tags = "INSERT INTO post_tag(post_id, tag_id) VALUES (:post_id, :tag_id)";
+    if ($tags != null) {
+        // 1, 2, 3
+        foreach ($tags as $tag) {
+            $state_tag = $conn->prepare($sql_post_tags);
+            $state_tag->bindValue(":post_id", $post_id, PDO::PARAM_INT);
+            $state_tag->bindValue(":tag_id", $tag, PDO::PARAM_INT);
+            $state_tag->execute();
+        }
+    }
 }
 
 function getPostById($id) {
@@ -184,6 +196,72 @@ function  getPaginationPost() {
     include '../../dbconnect.php';
     $limit = 5;
     $sql = "SELECT * FROM post;";
+    $state = $conn->prepare($sql);
+    $state->execute();
+    $total_rows = $state->rowCount();
+    return ceil($total_rows / $limit);
+}
+
+
+// ------- Tag functions -------
+function getTagList($page, $withoutLimit = false) {
+    include '../../dbconnect.php';
+    $limit = 5;
+//    $page = 1;
+    $offset = ($page - 1) * $limit;
+
+    if ($withoutLimit) {
+        $sql = "SELECT * FROM tag";
+        $state = $conn->prepare($sql);
+    } else {
+        $sql = "SELECT * FROM tag LIMIT :offset, :limit;";
+        $state = $conn->prepare($sql);
+        $state->bindValue(':limit', $limit, PDO::PARAM_INT);
+        $state->bindValue(':offset', $offset, PDO::PARAM_INT);
+    }
+    $state->execute();
+    $result = $state->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function addTag($name) {
+    include '../../dbconnect.php';
+    $sql_insert = "INSERT INTO tag (name) VALUES (:name)";
+    $state = $conn->prepare($sql_insert);
+    $state->bindValue(":name", $name);
+    $state->execute();
+}
+
+function getTagById($id) {
+    include '../../dbconnect.php';
+    $sql = "SELECT * FROM tag WHERE id = :id";
+    $state = $conn->prepare($sql);
+    $state->bindValue(":id", $id, PDO::PARAM_INT);
+    $state->execute();
+    return $state->fetch(PDO::FETCH_ASSOC);
+}
+
+function updateTag($id, $name) {
+    include '../../dbconnect.php';
+    $sql = "UPDATE tag SET name = :name WHERE id = :id";
+    $state = $conn->prepare($sql);
+    $state->bindValue(":id", $id, PDO::PARAM_INT);
+    $state->bindValue(":name", $name);
+    $state->execute();
+}
+
+function deleteTag($id) {
+    include '../../dbconnect.php';
+    $sql = "DELETE FROM tag WHERE id = :id";
+    $state = $conn->prepare($sql);
+    $state->bindValue(":id", $id, PDO::PARAM_INT);
+    $state->execute();
+}
+
+function  getPaginationTag() {
+    include '../../dbconnect.php';
+    $limit = 5;
+    $sql = "SELECT * FROM tag;";
     $state = $conn->prepare($sql);
     $state->execute();
     $total_rows = $state->rowCount();
