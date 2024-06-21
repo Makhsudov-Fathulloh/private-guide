@@ -17,7 +17,7 @@ include '../root/header.php';
         <h3><a href="/php/pages/functions.php">PhP functions</a></h3>
         <h3><a href="/php/pages/upload/upload.php">Upload file</a></h3>
 
-        <h3><a href="/php/project/index.php">Project</a></h3>
+        <h3><a href="/php/project/user">Project</a></h3>
     </div>
 
 <?php

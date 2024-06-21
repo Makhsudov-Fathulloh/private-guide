@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,6 +11,12 @@
 </head>
 
 <body>
+
+<?php if (!isset($_SESSION["logged"])) {
+    header("location: /php/project/admin/login/login.php");
+} ?>
+
+
 <div>
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container">
@@ -23,13 +31,19 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/php/project/admin/category/">Category</a>
+                        <a class="nav-link" href="/php/project/admin/category">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/php/project/admin/post/">News</a>
+                        <a class="nav-link" href="/php/project/admin/post">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/php/project/admin/tag/">Tags</a>
+                        <a class="nav-link" href="/php/project/admin/tag">Tags</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/php/project/admin/login/login.php">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/php/project/admin/login/logout.php">Logout</a>
                     </li>
                 </ul>
             </div>

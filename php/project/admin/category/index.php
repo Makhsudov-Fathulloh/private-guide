@@ -1,7 +1,13 @@
 <?php
-include '../../header.php';
+include '../header.php';
 include '../../dbconnect.php';
 include '../db_helper.php';
+
+
+//if (!isset($_SESSION["logged"])) {
+//    header("location: /php/project/admin/login/login.php");
+//}
+
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
