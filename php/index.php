@@ -12,6 +12,7 @@ include '../root/header.php';
         <h3><a href="/php/pages/5-advanced.php">Require, Include, MySQLi, PDO(CRUD)</a></h3>
         <h3><a href="/php/pages/6.php">Cookie, Session, Authentication and Authorization</a></h3>
         <h3><a href="/php/pages/7.php">JSON, DATE, FILE</a></h3>
+        <h3><a href="/php/pages/8.php">CURL</a></h3>
         <br>
 
         <h3><a href="/php/pages/functions.php">PhP functions</a></h3>

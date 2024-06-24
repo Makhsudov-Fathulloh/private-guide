@@ -6,5 +6,3 @@ if(isset($_SESSION['logged'])){
     unset($_SESSION['logged']);
 }
 header('Location: /php/project/user');
-
-
