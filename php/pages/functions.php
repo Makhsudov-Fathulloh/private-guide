@@ -78,6 +78,12 @@ include '../../root/header.php';
             <li><b>strtotime()</b> - harqandav vaqtni secund formatiga otkazib beradi.</li>
         </ol>
 
+        <ol>
+            <li><b>preg_match()</b> - berilgan exceptionga berilgan qiymatni tekshiradi. Masalan: email. </li>
+            <li><b>explode()</b> - stringni arrayga ajratish. birinchi atribut nima bilan ajratish, ikkinchi atribut nimani ajratish. </li>
+            <li><b>implode()</b> - explode()ni teskarisi. arrayni stringga aylantirish.</li>
+        </ol>
+
         <img src="/php/img/" alt=""> <br><br><br>
     </ul>
 </div>
