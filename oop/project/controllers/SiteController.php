@@ -1,8 +1,8 @@
 <?php
 
-//namespace project;
+namespace controllers;
 
-class Site
+class SiteController
 {
     public function home() {
         echo "home view";
@@ -10,6 +10,6 @@ class Site
     }
 
     public function contact() {
-        echo "contact view";
+        echo "contact list";
     }
 }

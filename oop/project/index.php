@@ -1,22 +1,9 @@
 <?php
 
-//use project\Site;
+include "autoload.php";
 
-include "Site.php";
-include "Category.php";
+use vendor\framework\Application;
 
-$uri = $_SERVER['REQUEST_URI'];
+$app = new Application();
+$app->run();
 
-print_r($uri);
-// /oop/project/index.php/site/contact
-
-echo "<pre>";
-$data = explode("/", $uri);
-print_r($data);
-echo "<br>";
-
-$className = ucfirst($data[4]); // site -> Site
-$functionName = $data[5];
-
-$object = new $className();
-$object->$functionName();

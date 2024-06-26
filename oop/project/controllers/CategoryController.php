@@ -1,8 +1,8 @@
 <?php
 
-//namespace project;
+namespace controllers;
 
-class Category
+class CategoryController
 {
     public function list() {
         echo "category list";
@@ -11,5 +11,9 @@ class Category
 
     public function create() {
         echo "category create";
+    }
+
+    public function update($id) {
+        echo "category update: $id";
     }
 }
